@@ -1,4 +1,4 @@
-    body{
+   body{
       margin: 0;
       padding: 0;
       font-family: 'Open Sans', sans-serif;
@@ -39,19 +39,31 @@
       background-color: #f3f3f3;
       height: 140px;
     }
-     .nav-wrapper, .sub-nav-wrapper, .article-wrapper{
+     .nav-wrapper, .sub-nav-wrapper, .article-wrapper, .slider-wrapper{
       position: relative;
       width: 100%;
       text-align: center;
      }
-     .container.myNav, .container.mySubNav{
+     .slider-wrapper, .article-text, .projects-images{
+      background-color: #f3f3f3;
+     }
+     .slider-container{
+       display: inline-table;
+       position: relative;
+       width: 78%;
+       max-height: 700px;
+       margin: 0 auto;
+       background-color: #fff;
+       border-bottom: 3px solid #e5e6e6;
+     }
+     .container.myNav, .container.mySubNav, .article-text, .related-projects{
        display: inline-table;
        position: relative;
        width: 78%;
        height: 80px;
        margin: 0 auto;
-
-     }
+      }
+      
      img.logo{
       position: absolute;
       top: 0;
@@ -160,9 +172,10 @@
     text-align: center;
     background: none repeat scroll 0% 0% rgb(232, 100, 90);
     box-shadow: 0 2px 0 #E2534B;
-    border-radius: 0px 6px 6px 0px;
+    border-radius: 6px 0px 0px 6px;
     opacity: 1.0;
     color: #fff;
+    cursor: pointer;
     }
     .controls a.left{
     position: absolute;
@@ -177,4 +190,52 @@
     border-radius: 0px 6px 6px 0px;
     opacity: 1.0;
     color: #fff;
+    cursor: pointer;
     }
+    .icons i{
+      padding: 5px;
+      font-size: 60px;
+      height: 5px;
+      color: #b0b8b9;
+    }
+    .fa.fa-file-image-o{
+      font-size: 100px;
+      color: #ececec;
+      position: absolute;
+      top: 30%;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+
+    }
+    .projects-images{
+       display: inline-table;
+       position: relative;
+       width: 78%;
+       height: 300px;
+       margin: 0 auto;
+      }
+    .outer.col-md-3{
+      position: relative;
+      width: 21%;
+      height: 240px;
+      margin: 2%;
+    }
+     .item-view-onhover, .item-view-onhover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    }
+    .item-view{
+      background-color: #fff;
+      z-index: 1;
+    }
+    .item-view-onhover{
+      background-color: red;
+      z-index: -5;
+    }
+   
+    
