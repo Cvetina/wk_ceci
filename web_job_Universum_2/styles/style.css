@@ -1,0 +1,40 @@
+    body{
+      margin: 0;
+      padding: 0;
+    }
+    a, a:hover, a:active{
+      text-decoration: none !important;
+    }
+    img{
+      max-width: 100%;
+    }
+     ul{
+      margin: 0;
+      padding: 0;
+      text-align: center;
+     }
+     ul li{
+      display: inline-table;
+      margin: 0 auto;
+     }
+     ul li a{
+      display: block;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-right: 5px;
+     }
+     .nav-wrapper{
+      background: url('img/headerBottomLine.png') bottom left repeat-x #66cccc; 
+     }
+     .container.myNav{
+       position: relative;
+       width: 50%;
+       height: 40px;
+
+     }
+     .logo{
+      position:absolute;
+      top:0;
+      bottom:0;
+      margin:auto;
+     }
