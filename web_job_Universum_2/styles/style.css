@@ -1,6 +1,9 @@
     body{
       margin: 0;
       padding: 0;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 500;
+      font-size: 13px;
     }
     a, a:hover, a:active{
       text-decoration: none !important;
@@ -21,15 +24,22 @@
       text-align: center;
      }
      ul li a{
-      /*display: block;*/
-      padding-top: 10px;
-      padding-bottom: 10px;
-      padding-right: 15px;
+      display: block;
+      padding: 8px 15px;
+      margin-left: 10px;
+      border-radius: 6px;
      }
      .nav-wrapper{
-      background-color: #66cccc;
+      background: url(../img/headerBottomLine.png) repeat-x 0 100% rgba(98, 185, 176, 0.8);                
      }
-     .nav-wrapper, .sub-nav-wrapper{
+     .sub-nav-wrapper{
+      background-color: #ececec;
+     }
+     .article-wrapper{
+      background-color: #f3f3f3;
+      height: 140px;
+    }
+     .nav-wrapper, .sub-nav-wrapper, .article-wrapper{
       position: relative;
       width: 100%;
       text-align: center;
@@ -51,10 +61,12 @@
      }
      .container.mySubNav span{
       position: absolute;
-      top: 15%;
+      top: 20%;
       bottom: 0;
       left: 0;
       margin: auto;
+      color: #7f8c8c;
+      font-size: 20px;
      }
      nav .dropdown{
       position: absolute;
@@ -65,9 +77,104 @@
      }
     .container.mySubNav ul{
       position: absolute;
-      top: 0;
+      top: 15%;
       bottom: 0;
       right: 0;
       margin: auto;
+      color: #7f8c8c;
+    }
+    .arrowDown{
+      position: absolute;
+      left:11%;
+      bottom: -10px;
+      z-index: 1;
+    }
+    .container.myNav ul li a,  .container.myNav ul li{
+      text-transform: uppercase;
+      color: #fff;
+    }
+    div.article{
+       display: inline-table;
+       position: relative;
+       width: 78%;
+       height: 100px;
+       margin: 0 auto;
 
+     }
+    .article-wrapper h1{
+      position: absolute;
+      top: 40%;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      font-size: 21px;
+      color: #7f8c8c;
+     }
+    .article-wrapper a.left{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 80px;
+      margin: auto;
+      font-size: 20px;
+      background: none repeat scroll 0% 0% rgb(152, 163, 163);
+      box-shadow: 0 2px 0 #7f8c8c;
+      border-radius: 6px;
+      color: #FFF;
+      text-align: center;
+      width: 40px;
+      height: 40px;
+    }
+    .article-wrapper a.right{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 25px;
+      margin: auto;
+      font-size: 20px;
+      background: none repeat scroll 0% 0% rgb(232, 100, 90);
+      box-shadow: 0 2px 0 #E2534B;
+      border-radius: 6px;
+      color: #FFF;
+      text-align: center;
+      width: 40px;
+      height: 40px;  
+      text-align: center; 
+    }
+    .article-wrapper a.right i, .article-wrapper a.left i{
+       position: relative;
+       top: 20%;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       margin: auto;
+       display: inline-table;
+    }
+    .controls a.right{
+    position: absolute;
+    right: 0;
+    top: 45%;
+    width: 48px;
+    height: 55px;
+    font-size: 38px;
+    text-align: center;
+    background: none repeat scroll 0% 0% rgb(232, 100, 90);
+    box-shadow: 0 2px 0 #E2534B;
+    border-radius: 0px 6px 6px 0px;
+    opacity: 1.0;
+    color: #fff;
+    }
+    .controls a.left{
+    position: absolute;
+    left: 0;
+    top: 45%;
+    width: 48px;
+    height: 55px;
+    font-size: 38px;
+    text-align: center;
+    background: none repeat scroll 0% 0% rgb(232, 100, 90);
+    box-shadow: 0 2px 0 #E2534B;
+    border-radius: 0px 6px 6px 0px;
+    opacity: 1.0;
+    color: #fff;
     }
