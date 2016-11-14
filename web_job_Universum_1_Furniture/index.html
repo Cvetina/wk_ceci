@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+ <html lang="bg-BG">
+ <head>
+	<meta charset="UTF-8">
+	<title>Онлайн магазин за Мебели - Домът</title>
+    <link type="image/x-icon" rel="shortcut icon" href="images/logo_fav.png" />
+    <meta name="keywords" content="Онлайн Магазин за мебели Домът"/>
+    <meta name="description" content="Магазини за обзавеждане Домът - качество и стил. Домът Ви предлага - Дизайн и обзавеждане за кухня, спалня, дневна, трапезария, коридор, градина и детска стая." />
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+	<script type="text/javascript" src="js/responsivemultimenu.js"></script>
+	<link rel="stylesheet" href="css/responsivemultimenu.css" type="text/css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>  
+	<link rel="stylesheet" href="css/styles.css" type="text/css"/>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      // get items to poplute from db_items.json
+      $.getJSON("db_items.json", function(json) {
+        var items = json.items;
+        var div_outer_container = document.getElementById("div-items-container");
+        var ul_current;
+
+        // iterates all items in array and generates HTML code for each one, from template
+        for(var i = 0; i < items.length; i++) {
+
+          // on first and each 4-th item, we generate div and ul container
+          // because we need maximum 4 items per row
+          if(i % 4 == 0) {
+            var div_current = document.createElement("div"); 
+            div_current.className = "new-products";
+            div_outer_container.appendChild(div_current);
+
+            ul_current = document.createElement("ul");
+            ul_current.className = "row-products";
+            div_current.appendChild(ul_current);
+          }
+
+          // template which we use for generation of each li element
+          var li_string = '\
+            <li> <img class="responsive" src="{{img}}">\
+                 <div class="info"> {{price}}.00 лв. <a href="#">Купи <img class="noshadow" src="images/backetGrey.png"/></a></div>\
+                 <div class="info-bottom"> {{title}}\
+                 <div class="info-description">{{description}}</div>\
+                 </div>\
+            </li>';
+
+            // replace each var in template, which is in {{}}
+            li_string = li_string.replace("{{img}}",items[i].img);
+            li_string = li_string.replace("{{price}}",items[i].price);
+            li_string = li_string.replace("{{title}}",items[i].title);
+            li_string = li_string.replace("{{description}}",items[i].description);
+
+            // create li item, and fill it with generated string li_string
+            var li_item = document.createElement("li");
+            li_item.innerHTML = li_string;
+            ul_current.appendChild(li_item);
+         }
+       })
+      .fail(function() {
+        var div_outer_container = document.getElementById("div-items-container");
+        var h2 = document.createElement("h2"); 
+        h2.innerHTML = 'Моля, отворете страницата през webserver, за да видите продуктите!<br>Те се зареждат от JSON файл, който не може да се отвори през <b>file://</b> link!';
+        h2.style.backgroundColor = "red";
+        h2.style.color = "white";
+        div_outer_container.appendChild(h2);
+  		})
+     });
+    $(document).ready(function(){ 
+    $('.benefits').hide();
+    $('.logo').fadeIn(3000);
+    $('.benefits').fadeIn(4000);
+});
+    </script>        
+ </head>
+ <body>
+    <div class="header">
+       <img class="header-img responsive" src="images/homePageImgTwo.jpg"/> 
+       <img class="logo" src="images/logo.png"/>      
+		<div class="rmm style">
+			<ul>
+				<li>
+					<a href="#">Дом</a>
+					<ul>
+						<li>
+							<a href="#">Мека мебел</a>
+						</li>
+						<li>
+							<a href="#">Кухни</a>
+							<ul>
+								<li><a href="#">Корпусна Мебел</a></li>
+								<li><a href="#">Маси и Столове</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Спални</a>
+							<ul>
+								<li><a href="#">Легла</a></li>
+								<li><a href="#">Гардероби</a></li>
+								<li><a href="#">Бюра</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Детски стаи</a>
+							<ul>
+								<li><a href="#">Легла</a></li>
+								<li><a href="#">Гардероби</a></li>
+								<li><a href="#">Бюра</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Офис</a>
+					<ul>
+					   <li><a href="#">Бюра</a></li>
+					   <li><a href="#">Етажерки</a></li>
+					   <li><a href="#">Офис столове</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Градина</a>
+					<ul>
+						<li><a href="#">Градинска мебел</a></li>
+						<li><a href="#">Озеленяване</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Текстил</a>
+					<ul>
+						<li><a href="#">Завеси/Пердета</a></li>
+						<li><a href="#">Килими</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Магазини</a>
+					<ul>
+						<li><a href="#">София-град</a></li>
+						<li><a href="#">Пловдив</a></li>
+						<li><a href="#">Варна</a></li>
+						<li><a href="#">Бургас</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Количка <img src="images/backet.png"/></a>
+				</li>
+				<li>
+					<a href="tel:+359894318634">0894 318 634 <img src="images/tel.png"/></a>
+				</li>
+			</ul>
+		</div>
+	  <div class="benefits">
+	    <ul>
+          <li><img alt="" src="images/van.png"/></li> 
+          <li><img alt="" src="images/design.png"/></li>
+          <li><img alt="" src="images/money.png"/></li>
+        </ul>   
+     </div>	
+</div> 
+<div class="text">
+       <h1>Вашият дом с перфектен дизайн и качество</h1>
+       <p>Съществуват много вариации на пасажа Lorem Ipsum, но повечето от тях са променени по един или друг начин чрез добавяне на смешни думи или разбъркване на думите, което не изглежда много достоверно. Ако искате да използвате пасаж от Lorem Ipsum, трябва да сте сигурни, че в него няма смущаващи или нецензурни думи. Всички Lorem Ipsum генератори в Интернет използват предефинирани пасажи, който се повтарят, което прави този този генератор първия истински такъв. Той използва речник от над 200 латински думи, комбинирани по подходящ начин като изречения, за да генерират истински Lorem Ipsum пасажи. Оттук следва, че генерираният Lorem Ipsum пасаж не съдържа повторения, смущаващи, нецензурни и всякакви неподходящи думи.</p>
+       <img class="img-abs" src="images/5690146.png">
+   </div>
+   <div class="text-color">
+       <h2>Моят нов дом - Уют за цялото семейство</h2>
+       <p>Съществуват много вариации на пасажа Lorem Ipsum, но повечето от тях са променени по един или друг начин чрез добавяне на смешни думи или разбъркване на думите, което не изглежда много достоверно. Ако искате да използвате пасаж от Lorem Ipsum, трябва да сте сигурни, че в него няма смущаващи или нецензурни думи. Всички Lorem Ipsum генератори в Интернет използват предефинирани пасажи, който се повтарят, което прави този този генератор първия истински такъв. Той използва речник от над 200 латински думи, комбинирани по подходящ начин като изречения, за да генерират истински Lorem Ipsum пасажи. Оттук следва, че генерираният Lorem Ipsum пасаж не съдържа повторения, смущаващи, нецензурни и всякакви неподходящи думи.</p>
+     
+   </div>
+   <div class="promo">
+   	<h2>Промоции до края на Ноември!!!</h2>
+   </div>
+   <div id="div-items-container" class="new-products">
+   </div> 
+   <!--<img class="responsive" src="images/modern-furniture.jpg"/> -->
+   <div id="myMap">
+            <div id="gmap_display" style="height:100%; width:100%;max-width:100%;">
+                <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=ул.+„бул+Андрей+Ляпчев“+54,+София,+България&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe>
+            </div> 
+   </div>
+
+   <footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<img src="images/logo_fav.png">
+				<span class="footer-company-name">Мебели "Домът" &copy; 2016</span>
+                 <div class="contacts"> 
+			      За Контакти: <a href="tel:+359894318634">0894 318 634<img src="images/tel.png"></a>
+			    </div>
+				<p class="footer-links">
+					<a href="#">Дом</a>
+					
+					<a href="#">Офис</a>
+					
+					<a href="#">Градина</a>
+					
+					<a href="#">Тексил</a>
+					
+					<a href="#">Магазини</a>
+					
+					<a href="#">Начало</a>
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+					<a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+					<a href="https://plus.google.com/"><i class="fa fa-google"></i></a>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p>Запитване</p>
+
+				<form action="#" method="post">
+
+					<input type="text" name="email" placeholder="e-mail" />
+					<textarea name="message" placeholder="Запитване"></textarea>
+					<button>Изпрати</button>
+
+				</form>
+
+			</div>
+
+		</footer>
+		<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5825b30e4172980c5e7d7c85/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+         <!--End of Tawk.to Script-->
+</body>
+</html>

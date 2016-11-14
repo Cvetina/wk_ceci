@@ -1,0 +1,76 @@
+{
+  "items": [
+    {
+      "img": "images/bedNew.jpg",
+      "title": "Спалня Ивет",
+      "description": "Класическа спалня в цвят \"Орех\"",
+      "price": "500"
+    },
+    {
+      "img": "images/chairNew.jpg",
+      "title": "Стол Ивет",
+      "description": "Класически стол в цвят \"Орех\"",
+      "price": "220"
+    },
+    {
+      "img": "images/divanBeigeNew.jpg",
+      "title": "Ъглов Диван",
+      "description": "Ъглов диван цвят беж",
+      "price": "980"
+    },
+    {
+      "img": "images/divanNew.jpg",
+      "title": "Диван Крем",
+      "description": "Диван цвят беж",
+      "price": "780"
+    },
+    {
+      "img": "images/bedVengeNew.jpg",
+      "title": "Спалня Венге",
+      "description": "Класическа спалня в цвят \"Венге\"",
+      "price": "840"
+    },
+    {
+      "img": "images/chairBlueNew.jpg",
+      "title": "Стол Каприз",
+      "description": "Тапециран стол в цвят \"Тюркоаз\"",
+      "price": "155"
+    },
+    {
+      "img": "images/tvNew.jpg",
+      "title": "ТВ шкаф",
+      "description": "Модулен шкаф - цвят \"Орех\"",
+      "price": "920"
+    },
+    {
+      "img": "images/officeBuroNew.jpg",
+      "title": "Офис бюро",
+      "description": "Стилно и комфортно бюро",
+      "price": "760"
+    },
+    {
+      "img": "images/bedNew.jpg",
+      "title": "Спалня Ивет",
+      "description": "Класическа спалня в цвят \"Орех\"",
+      "price": "500"
+    },
+    {
+      "img": "images/chairNew.jpg",
+      "title": "Стол Ивет",
+      "description": "Класически стол в цвят \"Орех\"",
+      "price": "220"
+    },
+    {
+      "img": "images/divanBeigeNew.jpg",
+      "title": "Ъглов Диван",
+      "description": "Ъглов диван цвят беж",
+      "price": "980"
+    },
+    {
+      "img": "images/divanNew.jpg",
+      "title": "Диван Крем",
+      "description": "Диван цвят беж",
+      "price": "780"
+    }
+  ]
+}

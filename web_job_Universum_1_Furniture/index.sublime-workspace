@@ -1,0 +1,576 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ma",
+				"margin-right"
+			],
+			[
+				"pa",
+				"padding-bottom"
+			],
+			[
+				"p",
+				"position"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"class",
+				"className"
+			],
+			[
+				"li_",
+				"li_template"
+			],
+			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"fo",
+				"font-weight"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"botto",
+				"border-bottom"
+			],
+			[
+				"c",
+				"clear"
+			],
+			[
+				"cl",
+				"clear"
+			],
+			[
+				"co",
+				"content"
+			],
+			[
+				"list-sty",
+				"list-style-type"
+			],
+			[
+				"he",
+				"head\tTag"
+			],
+			[
+				"e",
+				"email"
+			],
+			[
+				"you",
+				"your"
+			],
+			[
+				"ema",
+				"emailField"
+			],
+			[
+				"m",
+				"margin-bottom"
+			],
+			[
+				"t",
+				"top"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"bo",
+				"border-bottom"
+			],
+			[
+				"li",
+				"li\tTag"
+			],
+			[
+				"st",
+				"style\tTag"
+			],
+			[
+				"f",
+				"font-size"
+			],
+			[
+				"al",
+				"alt\tAttr"
+			],
+			[
+				"s",
+				"src\tAttr"
+			],
+			[
+				"hea",
+				"header\tTag"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"tb",
+				"tbody\tTag"
+			],
+			[
+				"me",
+				"meta"
+			],
+			[
+				"rg",
+				"rgba()"
+			],
+			[
+				"w",
+				"white"
+			],
+			[
+				"h",
+				"href\tAttr"
+			],
+			[
+				"r",
+				"rgba()"
+			],
+			[
+				"o",
+				"overflow"
+			],
+			[
+				"l",
+				"left"
+			],
+			[
+				"ph",
+				"photo"
+			],
+			[
+				"b",
+				"background-color"
+			],
+			[
+				"ta",
+				"target\tAttr"
+			],
+			[
+				"tex",
+				"text-indent"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"a",
+				"auto"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"fi",
+				"font-family"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 288.0,
+		"last_filter": "jso",
+		"selected_items":
+		[
+			[
+				"jso",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"json",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"install pack",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Install Package Control"
+			],
+			[
+				"settin",
+				"Preferences: Settings - Default"
+			],
+			[
+				"setting",
+				"Preferences: Settings - User"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/UniversumERP_JSON/index_raboti_2.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/UniversumERP_JSON/css/styles.css",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/UniversumERP_JSON/css/responsivemultimenu.css",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/UniversumERP_JSON/index.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/UniversumERP_JSON/run_web_server.bat",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/UniversumERP/css/styles",
+		"/C/Users/TEST/Desktop/index.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/UniversumERP/index",
+		"/D/view-source_www.enikom-m.com_bg.html",
+		"/D/CECI_DOCUMENTS/LESSONS_javaScript/practice",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/411Marketing/setmanandvan/sw-london.svg",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/411Marketing/mapster/mapster.html",
+		"/D/CECI_DOCUMENTS/LESSONS_javaScript/Html5 and JavaScript Projects/HTML5 and Javascript Projects.pdf",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/Child Photography site/index.html",
+		"/D/CECI_DOCUMENTS/LESSONS_javaScript/Lynda.com.Practical.and.Effective.JavaScript/Ex_Files_Pract_JavScrpt/exercise_files/02_exceptions/ExceptionExample1_start.htm",
+		"/D/CECI_DOCUMENTS/LESSONS_javaScript/Lynda.com.Practical.and.Effective.JavaScript/Ex_Files_Pract_JavScrpt/exercise_files/02_exceptions/ExceptionExample1.htm",
+		"/C/Users/TEST/Desktop/javascript",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/EFFECT/Hover-master/Hover-master/index.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/EFFECT/Hover-master/Hover-master/css/hover.css",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/cvetarnica/landing-page/index.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/cvetarnica/landing-page/stylesheet.css",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/CVETINA.NET/contacts.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/411Marketing/readyCleaners/sliding-menu.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/411Marketing/ManVanHire/caa.txt",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/Try_Mapster/mapster/beginner1.htm",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/411Marketing/mapster/mapster-working.html",
+		"/C/Users/TEST/Desktop/try.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/411Marketing/ManVanHire/manvanhire-area-pages.html",
+		"/C/Users/TEST/Desktop/slider-2.html",
+		"/C/Users/TEST/Desktop/manvanhire-area-pages.html",
+		"/C/Users/TEST/Desktop/first.html",
+		"/C/Users/TEST/Desktop/manvanhire-area-pages",
+		"/C/Users/TEST/Desktop/Sure Removals In London _ Hire Man And Van Movers.html",
+		"/C/Users/TEST/Desktop/toDo",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/SLIDING_PANNELS_portfolio/index.html",
+		"/C/Users/TEST/AppData/Local/Temp/fz3temp-2/spalni.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/EFFECT/3DShadingWithBoxShadows/index.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/test-me-softly/wp/wp-content/themes/twentyfourteen/functions.php",
+		"/D/CECI_DOCUMENTS/LESSONS_PHP/Lynda.com.Object-Oriented.Programming.with.PHP/Exercise Files/Exercise Files/02_02/class.Address.inc",
+		"/D/DOWNLOADS/Movies/- README - subs.sab.bz - Brought to you by  xen.headoff.com -.html",
+		"/D/DOWNLOADS/Movies/Hot.Pursuit.BRRip.x264-LDS/- README - subs.sab.bz - Brought to you by  xen.headoff.com -.html",
+		"/C/Users/TEST/Desktop/removals/mapster/mapster-working.html",
+		"/C/Users/TEST/Desktop/removals/mapster/mapster_try.html",
+		"/C/Users/TEST/Desktop/removals/mapster/mapster",
+		"/C/Users/TEST/Desktop/removals/New folder/SW.html",
+		"/C/Users/TEST/Desktop/removals/maps.html",
+		"/C/Users/TEST/Desktop/maps.html",
+		"/C/Users/TEST/Downloads/HTML_Tables/index.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/HOMEWORKS/HTML_Tables/index.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/NIKI_STIL/html/uslugi.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/NIKI_STIL/html/stelaji.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/NIKI_STIL/html/index.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/NIKI_STIL/html/magazini.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/NIKI_STIL/html/products.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/NIKI_STIL/html/klienti.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/NIKI_STIL/html/koridori.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/NIKI_STIL/html/kontakti.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/NIKI_STIL/html/kuhni.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/NIKI_STIL/html/sekcii.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/NIKI_STIL/html/spalni.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/NIKI_STIL/html/sitemap.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/NIKI_STIL/html/detski.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/NIKI_STIL/html/garderobni.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/NIKI_STIL/html/dnevni.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/NIKI_STIL/html/gradinsko.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/HOMEWORKS/RunnersHomePage/index.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/HOMEWORKS/NestedList/index.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/HOMEWORKS/SocialSite/friends.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/HOMEWORKS/SocialSite/profile.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/HOMEWORKS/SocialSite/index.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/Child Photography site/slider/index.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/Child Photography site/slider/stylesheet.css",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/Child Photography site/slider/stylesheet",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/Child Photography site/css/stylesheet.css",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/1stOnlineSolutions/WEB_SITE_2/index.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/Child Photography site/stylesheet.css",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/1stOnlineSolutions/WEB_SITE_2/stylesheet.css",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/1stOnlineSolutions/WEB_SITE_1/index.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/1stOnlineSolutions/WEB_SITE_1/stylesheet.css",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/1stOnlineSolutions/WEB_SITE_1/css/stylesheet.css",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/1st on line solutions/WEB_SITE_2/themes/4/js-image-slider.css",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/1st on line solutions/WEB_SITE_2/themes/4/js-image-slider.js",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/1st on line solutions/WEB_SITE_1/themes/4/js-image-slider.css",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/1st on line solutions/WEB_SITE_1/themes/4/js-image-slider.js",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/1st on line solutions/WEB_SITE_2/index.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/1st on line solutions/WEB_SITE_1/stylesheet.css",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/1st on line solutions/WEB_SITE_1/index.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/1st on line solutions/WEB_SITE_2/stylesheet.css",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/1st on line solutions/WEB_SITE_1/themes/3/js-image-slider.css",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/PORTFOLIO/stylesheet.css",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/1st on line solutions/WEB_SITE_1/stylesheet",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/NIKI_STIL/html/ofis.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/SLIDING_PANNELS_portfolio/slider/js-image-slider.css",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/SLIDING_PANNELS_portfolio/slider/js-image-slider.js",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/SLIDING_PANNELS_portfolio/css/style.css",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/SLIDING_PANNELS_portfolio/css/reset.css",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/PORTFOLIO/index.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/EFFECT/Slider_JsImg/themes/2/js-image-slider.css",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/EFFECT/Slider_JsImg/generic.css",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/AIDA/web_site/index.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/SLIDING_PANNELS/css/reset.css",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/SLIDING_PANNELS/index.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/PORTFOLIO/SLIDING_PANNELS/css/reset.css",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/PORTFOLIO/SLIDING_PANNELS/index.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/PORTFOLIO/SLIDING_PANNELS/css/style.css",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/PORTFOLIO/SLIDING_PANNELS/css/demo.css",
+		"/D/CECI_DOCUMENTS/BACKUPS/SLIDING_PANNELS/index.html",
+		"/D/CECI_DOCUMENTS/BACKUPS/SLIDING_PANNELS/css/style.css",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/EFFECT/Hover_Effects/index9.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/EFFECT/IMAGE_GALLERY_THUMBNAILS/deep-minified.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/EFFECT/IMAGE_GALLERY_THUMBNAILS/with-jquery.html",
+		"/C/Users/TEST/Downloads/IMAGE_GALLERY_THUMBNAILS/deep-minified.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/PORTFOLIO/slider/js-image-slider.css",
+		"/C/Users/TEST/Downloads/blueimp-Bootstrap-Image-Gallery-3.1.1-0-gbee85fa/blueimp-Bootstrap-Image-Gallery-281af5b/index.html",
+		"/C/Users/TEST/Downloads/blueimp-Bootstrap-Image-Gallery-3.1.1-0-gbee85fa/blueimp-Bootstrap-Image-Gallery-281af5b/css/bootstrap-image-gallery.css",
+		"/C/Users/TEST/Downloads/blueimp-Bootstrap-Image-Gallery-3.1.1-0-gbee85fa/blueimp-Bootstrap-Image-Gallery-281af5b/README.md",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/EFFECT/SLIDER/style",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/EFFECT/SLIDER/index.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/EFFECT/SLIDER/app.js",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/PORTFOLIO/animatescroll.js",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/PORTFOLIO/graphic.html",
+		"/D/Pictures_2/2013_R.D.Mireya/DSC08919.JPG",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/aida/web_site/stylesheetbg.css",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/aida/web_site/stylesheet.css",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/aida/web_site/index.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/aida/web_site/bg.html",
+		"/D/CECI_DOCUMENTS/PROJECTS_WEB_DESIGN/aida/index.html"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			".text",
+			"descriptiom",
+			"@",
+			".rmm-mobile li",
+			"rmm-dropdown",
+			"border:",
+			"li_template",
+			"main-products",
+			";\n",
+			"15px",
+			"z-index",
+			"954",
+			".rrm",
+			"div.rrm",
+			"height",
+			"back",
+			"BOUNCE",
+			";\n",
+			"sm",
+			"black",
+			"<img",
+			"fil1",
+			"alt",
+			"<td></td>",
+			"<p></p",
+			"         \t\n",
+			"<li></li>",
+			"<",
+			"bott",
+			"1st",
+			"#1st",
+			"#end",
+			"#1st",
+			"butt",
+			"button",
+			"col",
+			"bott",
+			"active",
+			"zoom",
+			"img",
+			"htt",
+			"mcImg",
+			"mcimg",
+			"img",
+			".text",
+			"font",
+			"Jewellery",
+			"border: 0;",
+			"5",
+			">\n",
+			"1100px",
+			"></"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 224.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
