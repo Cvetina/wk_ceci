@@ -4,6 +4,7 @@
     }
     a, a:hover, a:active{
       text-decoration: none !important;
+      text-align: center;
     }
     img{
       max-width: 100%;
@@ -16,25 +17,57 @@
      ul li{
       display: inline-table;
       margin: 0 auto;
+      padding: 0;
+      text-align: center;
      }
      ul li a{
-      display: block;
+      /*display: block;*/
       padding-top: 10px;
       padding-bottom: 10px;
-      padding-right: 5px;
+      padding-right: 15px;
      }
      .nav-wrapper{
-      background: url('img/headerBottomLine.png') bottom left repeat-x #66cccc; 
+      background-color: #66cccc;
      }
-     .container.myNav{
+     .nav-wrapper, .sub-nav-wrapper{
+      position: relative;
+      width: 100%;
+      text-align: center;
+     }
+     .container.myNav, .container.mySubNav{
+       display: inline-table;
        position: relative;
-       width: 50%;
-       height: 40px;
+       width: 78%;
+       height: 80px;
+       margin: 0 auto;
 
      }
-     .logo{
-      position:absolute;
-      top:0;
-      bottom:0;
-      margin:auto;
+     img.logo{
+      position: absolute;
+      top: 0;
+      bottom: 15%;
+      left: 0;
+      margin: auto;
      }
+     .container.mySubNav span{
+      position: absolute;
+      top: 15%;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+     }
+     nav .dropdown{
+      position: absolute;
+      top: 15%;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+     }
+    .container.mySubNav ul{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+
+    }
