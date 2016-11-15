@@ -32,6 +32,11 @@
      .nav-wrapper{
       background: url(../img/headerBottomLine.png) repeat-x 0 100% rgba(98, 185, 176, 0.8);                
      }
+     .btn-primary{
+     background: none repeat scroll 0% 0% rgba(98, 162, 158, 0.8) !important;
+     border-color: rgba(98, 162, 158, 0.8) !important;
+     box-shadow: 0 2px 0 #528B86;
+     }
      .sub-nav-wrapper{
       background-color: #ececec;
      }
@@ -218,24 +223,70 @@
       }
     .outer.col-md-3{
       position: relative;
-      width: 21%;
-      height: 240px;
-      margin: 2%;
+      width: 23%;
+      height: 270px;
+      margin: 1%;
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0 3px 0 #E5E6E6;
     }
-     .item-view-onhover, .item-view-onhover{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+    .item-view-onhover{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
     }
     .item-view{
       background-color: #fff;
       z-index: 1;
     }
     .item-view-onhover{
-      background-color: red;
+      background:  none repeat scroll 0% 0% #62B9B0;
       z-index: -5;
+      border-radius: 5px;
+      box-shadow: 0 3px 0 #E5E6E6;
+      color: #fff;
+      font-size: 25px;
+      text-align: center;
     }
-   
+    .outer.col-md-3:hover > .item-view-onhover{
+      z-index: 50;
+    }
+   .item-view-onhover p{
+       font-size: 16px;
+       position: absolute;
+       top: 75%;
+       left: 50%;
+       text-indent: -50px;
+   }
+   .item-view-onhover i.fa.fa-eye{
+    position: absolute;
+    left: 35%;
+    top: 40%;
+    padding: 10px;
+    border-radius: 5px;
+    background: none repeat scroll 0% 0% rgba(98, 162, 158, 0.8) !important;
+    border-color: rgba(98, 162, 158, 0.8) !important;
+    box-shadow: 0 2px 0 #528B86;
+   }
+   .item-view-onhover i.fa.fa-link{
+    position: absolute;
+    right: 35%;
+    top: 40%;
+    padding: 10px;
+    border-radius: 5px;
+    background: none repeat scroll 0% 0% rgba(98, 162, 158, 0.8) !important;
+    border-color: rgba(98, 162, 158, 0.8) !important;
+    box-shadow: 0 2px 0 #528B86;
+   }
+   .item-view-onhover a{
+    color: white;
+   }
+    .item-view-onhover a:hover > i.fa.fa-link, .item-view-onhover a:hover > i.fa.fa-eye{
+    color: white;
+    background: none repeat scroll 0% 0% rgb(232, 100, 90) !important;
+    box-shadow: 0 2px 0 #E2534B;
+   }
+    
     
