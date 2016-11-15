@@ -33,7 +33,19 @@
      .nav-wrapper{
       background: url(../img/headerBottomLine.png) repeat-x 0 100% rgba(98, 185, 176, 0.8);                
      }
-     .btn-primary{
+     .btn-primary.active{
+     background: none repeat scroll 0% 0% rgba(98, 162, 158, 0.8) !important;
+     border-color: rgba(98, 162, 158, 0.8) !important;
+     box-shadow: 0 2px 0 #528B86;
+     }
+     .open>.dropdown-menu {
+    display: block;
+    position: absolute;
+    top: 35px;
+    left: 39%;
+    background: none repeat scroll 0% 0% rgba(98, 162, 158, 0.8);
+    }
+     .container.myNav ul li a:hover{
      background: none repeat scroll 0% 0% rgba(98, 162, 158, 0.8) !important;
      border-color: rgba(98, 162, 158, 0.8) !important;
      box-shadow: 0 2px 0 #528B86;
@@ -362,7 +374,7 @@
    }
    .item-view-onhover i.fa.fa-eye{
     position: absolute;
-    left: 35%;
+    left: 30%;
     top: 40%;
     padding: 10px;
     border-radius: 5px;
@@ -372,7 +384,7 @@
    }
    .item-view-onhover i.fa.fa-link{
     position: absolute;
-    right: 35%;
+    right: 30%;
     top: 40%;
     padding: 10px;
     border-radius: 5px;
@@ -394,7 +406,6 @@
     color: #FFF;
     padding: 40px 0px 50px;
     margin-top: 250px;
-    height: 350px; 
     text-align: center;
   }
 
@@ -496,4 +507,95 @@ color: rgba(0, 0, 0, 0.5);
   padding-left: 20px;
 }
   /* end footer */
+
+  /* responsive*/
+
+  @media (max-width: 1250px){
+     nav .dropdown{
+      z-index: 15;
+      margin-top: 30px;
+      width: 100%;
+     }
+     nav .dropdown ul li{
+      display: block;
+      background: none repeat scroll 0% 0% rgba(98, 162, 158, 0.8);
+      border-color: rgba(98, 162, 158, 0.8);
+      box-shadow: 0 2px 0 #528B86;
+     }
+     .responsive-menu{
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: none repeat scroll 0% 0% rgba(98, 162, 158, 0.8) !important;
+      border-color: rgba(98, 162, 158, 0.8) !important;
+      box-shadow: 0 2px 0 #528B86;
+      color: white;
+      width: 200px;
+      height: 40px;
+     }
+     .outer.col-md-3{
+      width: 30%;
+     }
+    }
+   @media (min-width: 1250px){
+    .responsive-menu{
+      display: none;
+    }
+  }
+   @media (max-width: 1100px){
+      .outer.col-md-3{
+      width: 40%;
+     }
+    }
+    @media (max-width: 750px){
+      .outer.col-md-3{
+      width: 50%;
+     }
+    }
+   @media (max-width: 540px){
+    img.logo {
+      position: absolute;
+      top: 50px;
+      left: 0;
+      right: 0;
+      margin: auto;
+
+     }
+      .responsive-menu{
+        right: 16%;
+     }
+     .container.mySubNav span, .container.mySubNav ul{
+      position: relative;
+      width: 90%;
+      margin: 0 auto;
+     }
+      .article-wrapper a.right, .article-wrapper a.left{
+      position: relative;
+      top: 5px;
+      width: 90%;
+      margin-left: 48%;
+      font-size: 20px;
+      padding: 10px;
+      z-index: 1;
+     }
+     .data-project table{
+      width: 100%;
+     }
+  }
+  @media (max-width: 440px){
+    .responsive-menu{
+        right: 12%;
+     }
+     .article-wrapper a.right, .article-wrapper a.left{
+      margin-left: 45%;
+     }
+   }
+   @media (max-width: 340px){
+    .responsive-menu{
+        right: 5%;
+     }
+     .article-wrapper a.right, .article-wrapper a.left{
+      margin-left: 40%;
+     }
+   }
       
