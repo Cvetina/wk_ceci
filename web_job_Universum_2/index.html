@@ -41,7 +41,9 @@
 	                <span>PORTFOLIO</span>
 	                <ul>
 	                	<li><a href="#">Home</a> </li>
+	                	<li>/</li>
 	                	<li><a href="#">Portfolio</a></li>
+	                	<li>/</li>
 	                	<li><a href="#">WORDPRESS</a></li>
 	                </ul>
 	      </div>
@@ -62,21 +64,26 @@
 	 <div class="slider-wrapper">
 	     <div class="slider-container">
 	        <div class="slider-img">
-	          <img src="img/imageSlider.jpg"/>
+	          <img src="img/imageSlider.png"/>
 	        </div>
-	        <div class="controls">
-		           <a href="#" class="left">
-			         <i class="fa fa-angle-double-left"></i>
-			      </a>
-			 
-			      <a href="#" class="right">
-			        <i class="fa fa-angle-double-right"></i>
-			      </a>
-	        </div>
+		        <div class="controls-bottom">
+			         <ol class="carousel-indicators">
+				        <li class=""></li>
+				        <li class="active"></li>
+				        <li class=""></li>
+	                 </ol>
+			    </div>   
+	            <div class="controls">
+			           <a href="#" class="left">
+				         <i class="fa fa-angle-double-left"></i>
+				      </a>
+				 
+				      <a href="#" class="right">
+				        <i class="fa fa-angle-double-right"></i>
+				      </a>
+	           </div>
 	     </div>
-		        <div class="icons">
-		           <i class="fa fa-minus" aria-hidden="true"></i><i class="fa fa-minus" aria-hidden="true"></i><i class="fa fa-minus" aria-hidden="true"></i>	
-		        </div>   
+		        
 	     <div class="article-text">
              <div class="description col-md-6">
              	<h4>PROJECT DESCRIPTION</h4>
@@ -85,15 +92,48 @@
              </div>
              <div class="data-project col-md-6">
              	<h3>PROJECT DETAILS</h3>
-             	<div class="col-md-4">cvb</div>
-             	<div class="col-md-4">dh</div>
+             	<div class="table">
+             		<table>
+             		  <tr>
+             			<td><i class="fa fa-calendar" aria-hidden="true"></i> </td>
+             			<td>Release date</td>
+             			<td>26 May 2013</td>
+             		  </tr>	
+             		  <tr>
+             			<td><i class="fa fa-cogs" aria-hidden="true"></i></td>
+             			<td>Technologies</td>
+             			<td>HTML/CSS <br/>
+                           WORDRPESS</td>
+             		  </tr>	
+             		  <tr>
+             			<td><i class="fa fa-user" aria-hidden="true"></i></td>
+             			<td>Client</td>
+             			<td>MightyDeals.</td>
+             		  </tr>	
+             		  <tr>
+             			<td><i class="fa fa-link" aria-hidden="true"></i></td>
+             			<td>Project url</td>
+             			<td><a href="#">VIEW PROJECT</a></td>
+             		  </tr>	
+             		</table>
+             	</div>
              </div>
 
          </div>
  	     <div class="related-projects">
- 	         <div class="col-md-2">cvb</div>
+ 	         <div class="col-md-2">
+                 <h4>RELATED PROJECTS</h4>
+ 	         </div>
  	         <div class="col-md-8">cvb</div>
- 	         <div class="col-md-2">cvb</div>
+ 	         <div class="col-md-2">
+ 	         	 <a class="left" href="#slide-show" data-slide="prev">
+		             <i class="fa fa-chevron-left left" aria-hidden="true"></i>
+		         </a>
+		 
+				 <a class="right" href="#slide-show" data-slide="next">
+				     <i class="fa fa-chevron-right right" aria-hidden="true"></i>
+				 </a>
+ 	         </div>
  	     </div>
 	 	      <div class="projects-images">
 		 	         <div class="outer col-md-3">
@@ -131,10 +171,94 @@
 	 	      </div>
 	 </div>
      
+<!-- in progress start here-->
 
-	 <div class="footer">
-	 	bgh
-	 </div>	 
+	<div class="footer">
+      <div class="footer-container">
+        <div class="col-md-4">
+          <h2><strong>MODUS</strong>versus</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec.</p>
+          <p>
+            Phone: <em>182 2569 5896</em></br>
+            e-mail: <em>info@modu.versus</em>
+          </p>
+        </div>
+        <div class="col-md-2">
+          <h3>Company</h3>
+          <ul>
+            <li>
+              <a href="#"><i class="fa fa-angle-right"></i> About</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-angle-right"></i> FAQ</a>
+            </li>
+            <li> 
+              <a href="#"><i class="fa fa-angle-right"></i> Contact</a>
+            </li>
+            <li>
+               <a href="#"><i class="fa fa-angle-right"></i> Contact</a>
+            </li>
+            <li>
+               <a href="#"><i class="fa fa-angle-right"></i> Privacy</a>
+            </li>
+            <li>
+               <a href="#"><i class="fa fa-angle-right"></i> Testimonials</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h3>Community</h3>
+          <ul>
+            <li>
+               <a href="#"><i class="fa fa-angle-right"></i> Blog</a>
+            </li>
+            <li>
+               <a href="#"><i class="fa fa-angle-right"></i> Forum</a>
+            </li>
+            <li>
+               <a href="#"><i class="fa fa-angle-right"></i> Support</a>
+            </li>
+            <li>
+               <a href="#"><i class="fa fa-angle-right"></i> Newsletter</a>
+            </li>            
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3><em>From the </em>BLOG</h3>
+          <ul>
+            <li>
+              <span><i class="fa fa-file-image-o" aria-hidden="true"></i></span>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit<br/>
+              <span class="ident"> 26 May, 2013       </span>                
+            </li>
+            <li>
+              <span><i class="fa fa-file-image-o" aria-hidden="true"></i></span>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit <br/>
+              <span class="ident"> 26 May, 2013       </span>               
+            </li>            
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container-full contact">
+      <div class="container">
+        <div class="col-md-12">
+          <div class="col-md-6" >
+            <p id="copyright">
+                2013  ModusVersus
+            </p>
+          </div>
+          <ul class="social-icon">            
+            <a href="#"><li class="pull-right fa fa-rss"></li></a>
+            <a href="#"><li class="pull-right fa fa-google-plus"></li></a>
+            <a href="#"><li class="pull-right fa fa-twitter"></li></a>
+            <a href="#"><li class="pull-right fa fa-facebook"></li></a>
+          </ul>
+        </div>
+      </div>
+    </div>
 
   
 </body>

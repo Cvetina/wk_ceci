@@ -4,6 +4,7 @@
       font-family: 'Open Sans', sans-serif;
       font-weight: 500;
       font-size: 13px;
+      background-color: #f3f3f3 !important;
     }
     a, a:hover, a:active{
       text-decoration: none !important;
@@ -61,12 +62,27 @@
        background-color: #fff;
        border-bottom: 3px solid #e5e6e6;
      }
-     .container.myNav, .container.mySubNav, .article-text, .related-projects{
+     .container.myNav, .container.mySubNav{
        display: inline-table;
        position: relative;
        width: 78%;
        height: 80px;
        margin: 0 auto;
+      }
+      .related-projects{
+       display: inline-table;
+       position: relative;
+       top: 130px;
+       width: 78%;
+       margin: 0 auto;
+      }
+      .article-text{
+        display: inline-table;
+       position: relative;
+       width: 78%;
+       height: 80px;
+       margin: 0 auto;
+       top: 85px;
       }
       
      img.logo{
@@ -75,6 +91,9 @@
       bottom: 15%;
       left: 0;
       margin: auto;
+     }
+     .container.mySubNav  a:hover{
+       color: #e8645a;
      }
      .container.mySubNav span{
       position: absolute;
@@ -116,7 +135,6 @@
        width: 78%;
        height: 100px;
        margin: 0 auto;
-
      }
     .article-wrapper h1{
       position: absolute;
@@ -149,14 +167,18 @@
       right: 25px;
       margin: auto;
       font-size: 20px;
-      background: none repeat scroll 0% 0% rgb(232, 100, 90);
-      box-shadow: 0 2px 0 #E2534B;
+      background: none repeat scroll 0% 0% rgb(152, 163, 163);
+      box-shadow: 0 2px 0 #7f8c8c;
       border-radius: 6px;
       color: #FFF;
       text-align: center;
       width: 40px;
       height: 40px;  
       text-align: center; 
+    }
+    .article-wrapper a:hover{
+    background: none repeat scroll 0% 0% rgb(232, 100, 90);
+    box-shadow: 0 2px 0 #E2534B;
     }
     .article-wrapper a.right i, .article-wrapper a.left i{
        position: relative;
@@ -197,12 +219,7 @@
     color: #fff;
     cursor: pointer;
     }
-    .icons i{
-      padding: 5px;
-      font-size: 60px;
-      height: 5px;
-      color: #b0b8b9;
-    }
+
     .fa.fa-file-image-o{
       font-size: 100px;
       color: #ececec;
@@ -214,11 +231,94 @@
       margin: auto;
 
     }
+    .carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 15;
+    width: 60%;
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none;
+   }
+    .carousel-indicators li {
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      width: 60px !important;
+      height: 7px !important;
+      background: none repeat scroll 0% 0% #7F8C8C !important;
+      border: none;
+      cursor: pointer;
+      border-radius: 0px;
+      margin: 0px 3px;
+}
+  .carousel-indicators li.active {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px !important;
+    height: 7px !important;
+    background: none repeat scroll 0% 0% #E2534B !important;
+    cursor: pointer;
+    border-radius: 0px;
+    margin: 0px 3px;
+}
+    .description.col-md-6{
+      text-align: left;
+      color: #7f8c8c;
+    }
+    .description.col-md-6 p, .description.col-md-6 h3{
+       padding-bottom: 20px;
+    }
+   .data-project h3{
+    padding-bottom: 20px;
+    color: #7f8c8c;
+    text-indent: -30%
+   } 
+   .related-projects h4{
+    color: #7f8c8c;
+    margin-left: -20px;
+   }
+   .related-projects a.right i, .related-projects a.left i{
+    background: none repeat scroll 0% 0% rgb(152, 163, 163);
+    box-shadow: 0 3px 0 rgb(127, 140, 140);
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    padding: 11px 14px;
+    color: white;
+    border-radius: 6px;
+    text-align: center;
+    }
+   .related-projects a:hover > i{
+   background: none repeat scroll 0% 0% rgb(232, 100, 90);
+   box-shadow: 0 2px 0 #E2534B;
+    }   
+      .data-project table {
+    position: relative;
+    color: #7f8c8c;
+    width: 60%;
+    margin: 0 auto;
+    text-align: left;
+   }
+    .data-project table tr{
+    border-bottom: 1px solid #e1e2e2;
+    padding-top: 20px;
+    }
+    .data-project table tr td{
+    padding-top: 15px;
+    }
+    .data-project table tr td a{
+    color: #e2534b;
+    }
     .projects-images{
        display: inline-table;
        position: relative;
        width: 78%;
        height: 300px;
+       top: 200px;
        margin: 0 auto;
       }
     .outer.col-md-3{
@@ -288,5 +388,112 @@
     background: none repeat scroll 0% 0% rgb(232, 100, 90) !important;
     box-shadow: 0 2px 0 #E2534B;
    }
-    
-    
+   /* footer */
+   .footer{
+    background: url(../img/headerBottomLineUp.png) repeat-x top rgb(118, 199, 192);   
+    color: #FFF;
+    padding: 40px 0px 50px;
+    margin-top: 250px;
+    height: 350px; 
+    text-align: center;
+  }
+
+  .footer h2, .footer p {
+    color: white;
+    padding: 10px;
+    text-align: left;
+  }
+  .footer-container{
+    display: inline-table;
+    position: relative;
+    width: 78%;
+   margin: 0 auto;
+  }
+  .footer-container .col-md-2 h3 {  
+    padding: 15px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+    text-align: left;
+  }
+
+  .footer-container .col-md-2 ul li {
+    display: block;
+    text-align: left;
+  }
+
+  .footer-container .col-md-4 h3 {
+    font-size: 20px; 
+    padding: 15px;
+    color: white;
+    font-weight: 700;
+    text-align: left;
+  }
+
+  
+  .footer ul li a {
+    display: inline-table;
+    color: white;
+  }
+
+
+  .footer-container .col-md-4 ul li {
+    padding-bottom: 13px;
+    text-align: left;
+  }
+  #copyright {
+    font-size: 12px;
+    line-height: 2;
+    margin: 0px 0px 5px;
+    color: white;
+    padding: 20px 0px 10px 0px;
+    text-align: left;
+  }
+
+  .social-icon {
+    font-size: 25px;
+    font-weight: 600;
+    color:white;
+  }
+
+  .social-icon li {
+    padding: 20px 13px 10px;
+    text-align: right;
+    color: #fff;
+  }
+  .social-icon li a {
+    color: #fff;
+  }
+  .social-icon li:hover {
+    color: #E2534B;
+  }
+ 
+  .container-full.contact {
+    background: none repeat scroll 0% 0% rgb(106, 179, 172); 
+  }
+    .footer em{
+      font-size: 20px;
+      font-weight: normal;
+    }
+    .footer .fa.fa-file-image-o {
+    font-size: 30px;
+    color: #ececec;
+    position: relative;
+    top: 30%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(106, 179, 172);
+    border-radius: 5px;
+    float: left;
+}
+.ident {
+color: rgba(0, 0, 0, 0.5);
+}
+.footer-container .col-md-4 ul li span{
+  padding-left: 20px;
+}
+  /* end footer */
+      
