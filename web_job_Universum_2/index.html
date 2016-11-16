@@ -277,7 +277,7 @@
        $(document).ready(function () {
     var width = $(window).width();
     if (width < 1250) {
-        $(".dropdown").fadeOut(300);
+        $(".dropdown").hide();
         $('nav').append($('<button class="responsive-menu">MENU</button>'));
         }
         $('.responsive-menu').click(function(){

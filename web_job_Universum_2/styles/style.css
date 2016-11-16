@@ -668,11 +668,14 @@ color: rgba(0, 0, 0, 0.5);
       position: relative;
       top: 5px;
       width: 90%;
-      margin-left: 35%;
-      font-size: 20px;
+      margin-left: 40%;
+      font-size: 12px !important;
       padding: 10px;
       z-index: 1;
      }
+      .article-wrapper a.right{
+      margin-left: 5%;
+       }
      .data-project table{
       width: 100%;
      }
