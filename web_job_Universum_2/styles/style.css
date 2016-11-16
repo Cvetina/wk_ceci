@@ -30,6 +30,9 @@
       margin-left: 10px;
       border-radius: 6px;
      }
+     button:focus {
+      outline:0;
+    }
      .nav-wrapper{
       background: url(../img/headerBottomLine.png) repeat-x 0 100% rgba(98, 185, 176, 0.8);                
      }
@@ -144,6 +147,7 @@
     div.article{
        display: inline-table;
        position: relative;
+       top: 40px;
        width: 78%;
        height: 100px;
        margin: 0 auto;
@@ -201,7 +205,7 @@
        margin: auto;
        display: inline-table;
     }
-    .controls a.right{
+    .controls a.right-slider{
     position: absolute;
     right: 0;
     top: 45%;
@@ -216,7 +220,7 @@
     color: #fff;
     cursor: pointer;
     }
-    .controls a.left{
+    .controls a.left-slider{
     position: absolute;
     left: 0;
     top: 45%;
@@ -293,21 +297,6 @@
     color: #7f8c8c;
     margin-left: -20px;
    }
-   .related-projects a.right i, .related-projects a.left i{
-    background: none repeat scroll 0% 0% rgb(152, 163, 163);
-    box-shadow: 0 3px 0 rgb(127, 140, 140);
-    width: 40px;
-    height: 40px;
-    font-size: 20px;
-    padding: 11px 14px;
-    color: white;
-    border-radius: 6px;
-    text-align: center;
-    }
-   .related-projects a:hover > i{
-   background: none repeat scroll 0% 0% rgb(232, 100, 90);
-   box-shadow: 0 2px 0 #E2534B;
-    }   
       .data-project table {
     position: relative;
     color: #7f8c8c;
@@ -605,6 +594,13 @@ color: rgba(0, 0, 0, 0.5);
      }
      .data-project table{
       width: 100%;
+     }
+    .slider-wrapper{
+    position: relative;
+    margin-top: 5px;
+     }
+     .article .col-md-3{
+      padding-bottom: 90px;
      }
   }
   @media (max-width: 440px){
