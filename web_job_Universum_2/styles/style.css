@@ -315,6 +315,13 @@
     }
     .data-project table tr td a{
     color: #e2534b;
+    padding: 3px;
+    border-radius: 6px;
+    }
+    .data-project table tr td a:hover{
+    color: white;
+    background: none repeat scroll 0% 0% rgb(232, 100, 90) !important;
+    box-shadow: 0 2px 0 #E2534B;
     }
     .projects-images{
        display: inline-table;
@@ -395,6 +402,40 @@
     background: none repeat scroll 0% 0% rgb(232, 100, 90) !important;
     box-shadow: 0 2px 0 #E2534B;
    }
+    /* timeline */
+    ol.timeline {
+      position: relative;
+      display: block;
+      margin: 10px;
+      height: 4px;
+      background: #e1e2e2;
+      list-style-type: none;
+    }
+    ol.timeline::before,
+    ol.timeline::after {
+      content: "";
+      position: absolute;
+      top: -8px;
+      display: block;
+      width: 0;
+      height: 0;
+      border-radius: 10px;
+      border: 8px solid #e1e2e2;
+    }
+    ol.timeline::before {
+      left: -5px;
+    }
+    ol.timeline::after {
+      right: -10px;
+      border: 10px solid transparent;
+      border-right: 0;
+      border-left: 10px solid #e1e2e2;
+      border-radius: 3px;
+    }
+
+
+    /*end*/
+
    /* footer */
    .footer{
     background: url(../img/headerBottomLineUp.png) repeat-x top rgb(118, 199, 192);   
@@ -555,7 +596,10 @@ color: rgba(0, 0, 0, 0.5);
    .outer.col-md-3{
       width: 40%;
      }
-    }
+   .top-space{
+    padding-top: 30px !important; 
+    } 
+   }
     @media (max-width: 730px){
       .projects-images {
       widows: 50%;
@@ -631,6 +675,10 @@ color: rgba(0, 0, 0, 0.5);
     height: 39px;
     font-size: 25px;
      }
+     .social-icon li {
+    font-size: 16px;
+    padding: 20px 3px 10px;
+    } 
    }
    @media (max-width: 340px){
     .responsive-menu{
@@ -646,5 +694,8 @@ color: rgba(0, 0, 0, 0.5);
       .outer.col-md-3{
       width: 90%;
      }
+      .social-icon li {
+    font-size: 12px;
+    } 
    }
       

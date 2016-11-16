@@ -125,8 +125,18 @@
  	         <div class="col-md-2">
                  <h4>RELATED PROJECTS</h4>
  	         </div>
- 	         <div class="col-md-8">------------------------------------------------------------------</div>
- 	         <div class="col-md-2">
+ 	         <div class="col-md-8"> 
+ 	                <ol class="timeline">
+					  <li>
+					  </li>
+					  <li>
+					  </li>
+					  <li>
+					    
+					  </li>
+					</ol>
+            </div>
+ 	         <div class="col-md-2 top-space">
  	         	 <a class="left" href="#slide-show" data-slide="prev">
 		             <i class="fa fa-chevron-left left" aria-hidden="true"></i>
 		         </a>
@@ -265,7 +275,7 @@
        $(document).ready(function () {
     var width = $(window).width();
     if (width < 1250) {
-        $(".dropdown").hide();
+        $(".dropdown").fadeOut(300);
         $('nav').append($('<button class="responsive-menu">MENU</button>'));
         }
         $('.responsive-menu').click(function(){
