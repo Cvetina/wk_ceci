@@ -1,220 +1,202 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Modus versus</title>
-	<link type="image/x-icon" rel="shortcut icon" href="img/logo_fav.png" />
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <title>Modus versus</title>
+  <link type="image/x-icon" rel="shortcut icon" href="img/logo_fav.png" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-    
-    $(document).ready(function () {
-
-      
-
-      var width = $(window).width();
-      if ( width < 1250 ) {
-        $('.navbar-toggle').click(function(){
-          $(".logo").toggle();
-          });
-         }
-$(window).on('resize',function(){location.reload();});
-      }); 
-
-   
-    </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function() {
+    var width = $(window).width();
+    if (width < 1250) {
+      $('.navbar-toggle').click(function() {
+        $(".logo").toggle();
+      });
+    }
+    $(window).on('resize', function() {
+      location.reload();
+    });
+  });
+  </script>
 </head>
 <body>
-   <div class="nav-wrapper">
-	  <div class="container myNav">
-	    
-	    <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#"><img class="logo" src="img/modusVersusLogo.png" alt="Modus versus Company Logo"> </a>
-    </div>
-    <div class="collapse navbar-collapse navbar-right" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li> 
-        <li class="dropdown">
-          <a class="dropdown-toggle active" data-toggle="dropdown" href="#"><span class="caret"></span> Portfolio</span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Page</a></li>
-            <li><a href="#">Page</a></li>
-            <li><a href="#">Page</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Contacts</a></li> 
-        <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li> 
-      </ul>
+  <div class="nav-wrapper">
+    <div class="container myNav">
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img class="logo" src="img/modusVersusLogo.png" alt="Modus versus Company Logo"> </a>
+          </div>
+          <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle active" data-toggle="dropdown" href="#"><span class="caret"></span> Portfolio</span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Page</a></li>
+                  <li><a href="#">Page</a></li>
+                  <li><a href="#">Page</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Contacts</a></li>
+              <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
   </div>
-  </nav> 
-	 </div>
-	 </div>
-	 <div class="sub-nav-wrapper"> 
-		 <div class="container mySubNav">
-	                <span>PORTFOLIO</span>
-	                <ul>
-	                	<li><a href="#">Home</a> </li>
-	                	<li>/</li>
-	                	<li><a href="#">Portfolio</a></li>
-	                	<li>/</li>
-	                	<li><a href="#">WORDPRESS</a></li>
-	                </ul>
-	      </div>
-	      <i class="fa fa-caret-down arrowDown"  aria-hidden="true"></i>
-	 </div>     
-	 <div class="article-wrapper">
-		 <div class="article">
-		 <div class="col-md-3"><h1>Donec faucibus ultricies congue</h1></div>
-		 <div class="col-md-6"></div>
- 	         <div class="col-md-3">
- 	         	 <a class="left" href="#slide-show" data-slide="prev">
-		             <i class="fa fa-chevron-left left" aria-hidden="true"></i>
-		         </a>
-		 
-				 <a class="right" href="#slide-show" data-slide="next">
-				     <i class="fa fa-chevron-right right" aria-hidden="true"></i>
-				 </a>
-		 </div>
-	 </div>
-	 <div class="slider-wrapper">
-	     <div class="slider-container">
-	        <div class="slider-img">
-	          <img src="img/imageSlider.png"/>
-	        </div>
-		        <div class="controls-bottom">
-			         <ol class="carousel-indicators">
-				        <li class=""></li>
-				        <li class="active"></li>
-				        <li class=""></li>
-	                 </ol>
-			    </div>   
-	            <div class="controls">
-			           <a href="#" class="left-slider">
-				         <i class="fa fa-angle-double-left"></i>
-				      </a>
-				 
-				      <a href="#" class="right-slider">
-				        <i class="fa fa-angle-double-right"></i>
-				      </a>
-	           </div>
-	     </div>
-		        
-	     <div class="article-text">
-             <div class="description col-md-6">
-             	<h4>PROJECT DESCRIPTION</h4>
-             	<p>Maecenas eget turpis turpis. Nunc vel metus augue. Aenean euismod cursus ligula eget dapibus. Praesent vel erat in tortor placerat dignissim. </p>
-             	<p>Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-             </div>
-             <div class="data-project col-md-6">
-             	<h3>PROJECT DETAILS</h3>
-             	<div class="table">
-             		<table>
-             		  <tr>
-             			<td><i class="fa fa-calendar" aria-hidden="true"></i> </td>
-             			<td>Release date</td>
-             			<td>26 May 2013</td>
-             		  </tr>	
-             		  <tr>
-             			<td><i class="fa fa-cogs" aria-hidden="true"></i></td>
-             			<td>Technologies</td>
-             			<td>HTML/CSS <br/>
-                           WORDRPESS</td>
-             		  </tr>	
-             		  <tr>
-             			<td><i class="fa fa-user" aria-hidden="true"></i></td>
-             			<td>Client</td>
-             			<td>MightyDeals.</td>
-             		  </tr>	
-             		  <tr>
-             			<td><i class="fa fa-link" aria-hidden="true"></i></td>
-             			<td>Project url</td>
-             			<td><a href="#">VIEW PROJECT</a></td>
-             		  </tr>	
-             		</table>
-             	</div>
-             </div>
-
-         </div>
- 	     <div class="related-projects">
- 	         <div class="col-md-2">
-                 <h4>RELATED PROJECTS</h4>
- 	         </div>
- 	         <div class="col-md-8"> 
- 	                <ol class="timeline">
-					  <li>
-					  </li>
-					  <li>
-					  </li>
-					  <li>
-					    
-					  </li>
-					</ol>
-            </div>
- 	         <div class="col-md-2 top-space">
- 	         	 <a class="left" href="#slide-show" data-slide="prev">
-		             <i class="fa fa-chevron-left left" aria-hidden="true"></i>
-		         </a>
-		 
-				 <a class="right" href="#slide-show" data-slide="next">
-				     <i class="fa fa-chevron-right right" aria-hidden="true"></i>
-				 </a>
- 	         </div>
- 	     </div>
-	 	      <div class="projects-images">
-		 	         <div class="outer col-md-3 col-xs-3">
-
-			 	         <div class="item-view"><i class="fa fa-file-image-o"></i></div>
-			 	         <div class="item-view-onhover"><a href="#"><i class="fa fa-eye"></i></a><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
-		                      <p>Lorem ipsum</p>
-			 	         </div>
-
-		 	         </div>   
-		 	         <div class="outer col-md-3 col-xs-3">
-
-			 	         <div class="item-view"><i class="fa fa-file-image-o"></i></div>
-			 	         <div class="item-view-onhover"><a href="#"><i class="fa fa-eye"></i></a><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
-		                      <p>Lorem ipsum</p>
-			 	         </div>
-
-		 	         </div>  
-		 	         <div class="outer col-md-3 col-xs-3">
-
-			 	         <div class="item-view"><i class="fa fa-file-image-o"></i></div>
-			 	         <div class="item-view-onhover"><a href="#"><i class="fa fa-eye"></i></a><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
-		                      <p>Lorem ipsum</p>
-			 	         </div>
-
-		 	         </div>  
-		 	         <div class="outer col-md-3 col-xs-3 last">
-
-			 	         <div class="item-view"><i class="fa fa-file-image-o"></i></div>
-			 	         <div class="item-view-onhover"><a href="#"><i class="fa fa-eye"></i></a><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
-		                      <p>Lorem ipsum</p>
-			 	         </div>
-
-		 	         </div>  
-	 	      </div>
-	 </div>
-     
-<!-- in progress start here-->
-
-	<div class="footer">
+  <div class="sub-nav-wrapper">
+    <div class="container mySubNav">
+      <span>PORTFOLIO</span>
+      <ul>
+        <li><a href="#">Home</a> </li>
+        <li>/</li>
+        <li><a href="#">Portfolio</a></li>
+        <li>/</li>
+        <li><a href="#">WORDPRESS</a></li>
+      </ul>
+    </div>
+    <i class="fa fa-caret-down arrowDown" aria-hidden="true"></i>
+  </div>
+  <div class="article-wrapper">
+    <div class="article">
+      <div class="col-md-3">
+        <h1>Donec faucibus ultricies congue</h1></div>
+      <div class="col-md-6"></div>
+      <div class="col-md-3">
+        <a class="left" href="#slide-show" data-slide="prev">
+          <i class="fa fa-chevron-left left" aria-hidden="true"></i>
+        </a>
+        <a class="right" href="#slide-show" data-slide="next">
+          <i class="fa fa-chevron-right right" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+    <div class="slider-wrapper">
+      <div class="slider-container">
+        <div class="slider-img">
+          <img src="img/imageSlider.png" />
+        </div>
+        <div class="controls-bottom">
+          <ol class="carousel-indicators">
+            <li class=""></li>
+            <li class="active"></li>
+            <li class=""></li>
+          </ol>
+        </div>
+        <div class="controls">
+          <a href="#" class="left-slider">
+            <i class="fa fa-angle-double-left"></i>
+          </a>
+          <a href="#" class="right-slider">
+            <i class="fa fa-angle-double-right"></i>
+          </a>
+        </div>
+      </div>
+      <div class="article-text">
+        <div class="description col-md-6">
+          <h4>PROJECT DESCRIPTION</h4>
+          <p>Maecenas eget turpis turpis. Nunc vel metus augue. Aenean euismod cursus ligula eget dapibus. Praesent vel erat in tortor placerat dignissim. </p>
+          <p>Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        </div>
+        <div class="data-project col-md-6">
+          <h3>PROJECT DETAILS</h3>
+          <div class="table">
+            <table>
+              <tr>
+                <td><i class="fa fa-calendar" aria-hidden="true"></i> </td>
+                <td>Release date</td>
+                <td>26 May 2013</td>
+              </tr>
+              <tr>
+                <td><i class="fa fa-cogs" aria-hidden="true"></i></td>
+                <td>Technologies</td>
+                <td>HTML/CSS
+                  <br/> WORDRPESS
+                </td>
+              </tr>
+              <tr>
+                <td><i class="fa fa-user" aria-hidden="true"></i></td>
+                <td>Client</td>
+                <td>MightyDeals.</td>
+              </tr>
+              <tr>
+                <td><i class="fa fa-link" aria-hidden="true"></i></td>
+                <td>Project url</td>
+                <td><a href="#">VIEW PROJECT</a></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="related-projects">
+        <div class="col-md-2">
+          <h4>RELATED PROJECTS</h4>
+        </div>
+        <div class="col-md-8">
+          <ol class="timeline">
+            <li>
+            </li>
+            <li>
+            </li>
+            <li>
+            </li>
+          </ol>
+        </div>
+        <div class="col-md-2 top-space">
+          <a class="left" href="#slide-show" data-slide="prev">
+            <i class="fa fa-chevron-left left" aria-hidden="true"></i>
+          </a>
+          <a class="right" href="#slide-show" data-slide="next">
+            <i class="fa fa-chevron-right right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+      <div class="projects-images">
+        <div class="outer col-md-3 col-xs-3">
+          <div class="item-view"><i class="fa fa-file-image-o"></i></div>
+          <div class="item-view-onhover"><a href="#"><i class="fa fa-eye"></i></a><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+            <p>Lorem ipsum</p>
+          </div>
+        </div>
+        <div class="outer col-md-3 col-xs-3">
+          <div class="item-view"><i class="fa fa-file-image-o"></i></div>
+          <div class="item-view-onhover"><a href="#"><i class="fa fa-eye"></i></a><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+            <p>Lorem ipsum</p>
+          </div>
+        </div>
+        <div class="outer col-md-3 col-xs-3">
+          <div class="item-view"><i class="fa fa-file-image-o"></i></div>
+          <div class="item-view-onhover"><a href="#"><i class="fa fa-eye"></i></a><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+            <p>Lorem ipsum</p>
+          </div>
+        </div>
+        <div class="outer col-md-3 col-xs-3 last">
+          <div class="item-view"><i class="fa fa-file-image-o"></i></div>
+          <div class="item-view-onhover"><a href="#"><i class="fa fa-eye"></i></a><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+            <p>Lorem ipsum</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- in progress start here-->
+    <div class="footer">
       <div class="footer-container">
         <div class="col-md-3">
           <h2><strong>MODUS</strong>versus</h2>
@@ -233,17 +215,17 @@ $(window).on('resize',function(){location.reload();});
             <li>
               <a href="#"><i class="fa fa-angle-right"></i> FAQ</a>
             </li>
-            <li> 
+            <li>
               <a href="#"><i class="fa fa-angle-right"></i> Contact</a>
             </li>
             <li>
-               <a href="#"><i class="fa fa-angle-right"></i> Contact</a>
+              <a href="#"><i class="fa fa-angle-right"></i> Contact</a>
             </li>
             <li>
-               <a href="#"><i class="fa fa-angle-right"></i> Privacy</a>
+              <a href="#"><i class="fa fa-angle-right"></i> Privacy</a>
             </li>
             <li>
-               <a href="#"><i class="fa fa-angle-right"></i> Testimonials</a>
+              <a href="#"><i class="fa fa-angle-right"></i> Testimonials</a>
             </li>
           </ul>
         </div>
@@ -251,17 +233,17 @@ $(window).on('resize',function(){location.reload();});
           <h3>Community</h3>
           <ul>
             <li>
-               <a href="#"><i class="fa fa-angle-right"></i> Blog</a>
+              <a href="#"><i class="fa fa-angle-right"></i> Blog</a>
             </li>
             <li>
-               <a href="#"><i class="fa fa-angle-right"></i> Forum</a>
+              <a href="#"><i class="fa fa-angle-right"></i> Forum</a>
             </li>
             <li>
-               <a href="#"><i class="fa fa-angle-right"></i> Support</a>
+              <a href="#"><i class="fa fa-angle-right"></i> Support</a>
             </li>
             <li>
-               <a href="#"><i class="fa fa-angle-right"></i> Newsletter</a>
-            </li>            
+              <a href="#"><i class="fa fa-angle-right"></i> Newsletter</a>
+            </li>
           </ul>
         </div>
         <div class="col-md-3 readme">
@@ -271,38 +253,43 @@ $(window).on('resize',function(){location.reload();});
               <span><i class="fa fa-file-image-o" aria-hidden="true"></i></span></span>
               <span class="text-a">Lorem ipsum dolor sit amet, consectetur adipiscing elit
               <p class="date">26 May, 2013</p>
-              </span>                            
+              </span>
             </li>
             <li>
               <span><i class="fa fa-file-image-o" aria-hidden="true"></i></span></span>
               <span class="text-a">Lorem ipsum dolor sit amet, consectetur adipiscing elit
                <p class="date">26 May, 2013</p>
-              </span>              
-            </li>       
+              </span>
+            </li>
           </ul>
         </div>
       </div>
     </div>
-
-
     <div class="container-full contact">
       <div class="container">
         <div class="col-md-12">
-          <div class="col-md-6" >
+          <div class="col-md-6">
             <p id="copyright">
-                2013  ModusVersus
+              2013 ModusVersus
             </p>
           </div>
-          <ul class="social-icon">            
-            <a href="#"><li class="pull-right fa fa-rss"></li></a>
-            <a href="#"><li class="pull-right fa fa-google-plus"></li></a>
-            <a href="#"><li class="pull-right fa fa-twitter"></li></a>
-            <a href="#"><li class="pull-right fa fa-facebook"></li></a>
+          <ul class="social-icon">
+            <a href="#">
+              <li class="pull-right fa fa-rss"></li>
+            </a>
+            <a href="#">
+              <li class="pull-right fa fa-google-plus"></li>
+            </a>
+            <a href="#">
+              <li class="pull-right fa fa-twitter"></li>
+            </a>
+            <a href="#">
+              <li class="pull-right fa fa-facebook"></li>
+            </a>
           </ul>
         </div>
       </div>
     </div>
-
-  
 </body>
+
 </html>
