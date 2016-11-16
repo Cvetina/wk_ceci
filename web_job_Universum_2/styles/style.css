@@ -33,26 +33,40 @@
      button:focus {
       outline:0;
      }
-     .nav-wrapper{
-      background: url(../img/headerBottomLine.png) repeat-x 0 100% rgba(98, 185, 176, 0.8);                
-     }
-     .btn-primary.active{
-     background: none repeat scroll 0% 0% rgba(98, 162, 158, 0.8) !important;
-     border-color: rgba(98, 162, 158, 0.8) !important;
-     box-shadow: 0 2px 0 #528B86;
-     }
-     .open>.dropdown-menu {
-    display: block;
-    position: absolute;
-    top: 35px;
-    left: 39%;
-    background: none repeat scroll 0% 0% rgba(98, 162, 158, 0.8);
+     .container.myNav ul li {
+    padding: 7px !important;
     }
-     .container.myNav ul li a:hover{
+     .active, .navbar-inverse .navbar-nav a:hover {
      background: none repeat scroll 0% 0% rgba(98, 162, 158, 0.8) !important;
      border-color: rgba(98, 162, 158, 0.8) !important;
      box-shadow: 0 2px 0 #528B86;
      }
+     .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+     background-color: none !important;
+     color: #fff !important;
+     }
+     .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+     color: #fff;
+     background-color: rgba(98, 185, 176, 0.8) !important; 
+    }
+     .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: rgba(98, 185, 176, 0.8) !important; 
+    }
+     .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+    background-color: rgba(98, 185, 176, 0.8) !important; 
+    }
+
+    .navbar-inverse .navbar-toggle {
+        border-color: rgba(98, 185, 176, 0.8) !important; 
+    }
+     .nav-wrapper{
+         background: url(../img/headerBottomLine.png) repeat-x 0 100% rgba(98, 185, 176, 0.8); 
+     }
+     .navbar-inverse {
+      background-color: rgba(255,255,255,0) !important; 
+      border: none !important;
+      margin-top: 20px;
+    }
      .sub-nav-wrapper{
       background-color: #ececec;
      }
@@ -125,6 +139,9 @@
       bottom: 0;
       right: 0;
       margin: auto;
+     }
+     nav .dropdown-menu{
+      background-color: rgba(98, 185, 176, 0.8) !important;
      }
     .container.mySubNav ul{
       position: absolute;
@@ -279,11 +296,13 @@
     display: inline-block;
     vertical-align: middle;
     width: 60px !important;
-    height: 7px !important;
+    height: 5px !important;
     background: none repeat scroll 0% 0% #E2534B !important;
     cursor: pointer;
     border-radius: 0px;
     margin: 0px 3px;
+    border-color: rgba(98, 162, 158, 0) !important;
+    box-shadow: 0 2px 0 rgba(98, 162, 158, 0) !important;
 }
     .description.col-md-6{
       text-align: left;
@@ -458,7 +477,7 @@
     width: 78%;
    margin: 0 auto;
   }
-  .footer-container .col-md-2 h3 {  
+  .footer-container .col-md-3 h3 {  
     padding: 15px;
     font-size: 20px;
     color: rgba(0, 0, 0, 0.5);
@@ -466,7 +485,7 @@
     text-align: left;
   }
 
-  .footer-container .col-md-2 ul li {
+  .footer-container .col-md-3 ul li {
     display: block;
     text-align: left;
   }
@@ -485,11 +504,6 @@
     color: white;
   }
 
-
-  .footer-container .col-md-4 ul li {
-    padding-bottom: 33px;
-    text-align: left;
-  }
   #copyright {
     font-size: 12px;
     line-height: 2;
@@ -524,53 +538,40 @@
       font-size: 20px;
       font-weight: normal;
     }
+    .col-md-3 ul li {
+    padding-bottom: 13px;
+}
+  .col-md-3.readme ul li a {
+    padding-left: 2.5%;
+    float: right;
+    width: 70%;
+    cursor: pointer;
+    text-align: left;
+}
+    
     .footer .fa.fa-file-image-o {
     font-size: 30px;
+    position: initial;
+    margin-top: 10px;
     color: #ececec;
-    position: relative;
-    top: 30%;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    margin: auto;
     padding: 20px;
     background-color: rgb(106, 179, 172);
     border-radius: 5px;
-    float: left;
-}
-.ident {
-color: rgba(0, 0, 0, 0.5);
-}
-.footer-container .col-md-4 ul li span{
-  padding-left: 20px;
-}
+  }
+  
   /* end footer */
 
   /* responsive*/
-
+   @media (min-width: 767px) and (max-width: 1330px){
+ img.logo {
+    position: absolute;
+    top: -120px;
+    bottom: 0;
+    left: 35%;
+    margin: auto;
+ }
+}
   @media (max-width: 1250px){
-     nav .dropdown{
-      z-index: 15;
-      margin-top: 30px;
-      width: 100%;
-     }
-     nav .dropdown ul li{
-      display: block;
-      background: none repeat scroll 0% 0% rgba(98, 162, 158, 0.8);
-      border-color: rgba(98, 162, 158, 0.8);
-      box-shadow: 0 2px 0 #528B86;
-     }
-     .responsive-menu{
-      position: absolute;
-      top: 0;
-      right: 0;
-      background: none repeat scroll 0% 0% rgba(98, 162, 158, 0.8) !important;
-      border-color: rgba(98, 162, 158, 0.8) !important;
-      box-shadow: 0 2px 0 #528B86;
-      color: white;
-      width: 200px;
-      height: 40px;
-     }
      .outer.col-md-3{
       width: 30%;
      }
@@ -579,11 +580,7 @@ color: rgba(0, 0, 0, 0.5);
       margin-left: 33%;
     }
     }
-   @media (min-width: 1250px){
-    .responsive-menu{
-      display: none;
-    }
-  }
+
    @media (max-width: 1100px){
       .outer.col-md-3{
       width: 30%;
@@ -652,9 +649,6 @@ color: rgba(0, 0, 0, 0.5);
       margin: auto;
 
      }
-      .responsive-menu{
-        right: 20%;
-     }
      .container.mySubNav span, .container.mySubNav ul{
       position: relative;
       width: 90%;
@@ -673,9 +667,6 @@ color: rgba(0, 0, 0, 0.5);
       padding: 10px;
       z-index: 1;
      }
-      .article-wrapper a.right{
-      margin-left: 5%;
-       }
      .data-project table{
       width: 100%;
      }
@@ -690,15 +681,15 @@ color: rgba(0, 0, 0, 0.5);
       width: 85%;
       margin: 0 auto;
      }
+    .article-wrapper a.right{
+    margin-left: 5%;
+    }
   }
  
   @media (max-width: 440px){
     .projects-images {
       width: 85%;
       margin: 0 auto;
-     }
-    .responsive-menu{
-        right: 12%;
      }
       .controls a.right-slider,  .controls a.left-slider  {
     width: 30px;
@@ -711,9 +702,6 @@ color: rgba(0, 0, 0, 0.5);
     } 
    }
    @media (max-width: 340px){
-    .responsive-menu{
-        right: 5%;
-     }
      .article-wrapper a.right, .article-wrapper a.left{
       margin-left: 40%;
      }

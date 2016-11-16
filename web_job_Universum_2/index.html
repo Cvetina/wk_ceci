@@ -10,32 +10,60 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    
+    $(document).ready(function () {
+
+      
+
+      var width = $(window).width();
+      if ( width < 1250 ) {
+        $('.navbar-toggle').click(function(){
+          $(".logo").toggle();
+          });
+         }
+$(window).on('resize',function(){location.reload();});
+      }); 
+
+   
+    </script>
 </head>
 <body>
    <div class="nav-wrapper">
 	  <div class="container myNav">
-	    <img class="logo" src="img/modusVersusLogo.png" alt="Modus versus Company Logo"> 
-	    <nav>
-	    	 <div class="dropdown">
-	    	    <ul> 
-	    	         <li><a href="#">Home</a></li>
-	    	         <li><a href="#">About</a></li>
-		             <li><a href="#">Services</a></li>  
-		               <li class="btn btn-primary active dropdown-toggle" id="menu1" type="button" data-toggle="dropdown"><span class="caret"></span> Portfolio
-                       </li>
-			                <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-						      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">One</a></li>
-						      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Two</a></li>
-						      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Tree</a></li>						
-			                </ul>
-                     <li><a href="#">Blog</a></li>
-		             <li><a href="#">Features</a></li>
-		             <li><a href="#">Contacts</a></li> 
-		             <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>    
-		         </ul>       
-              </div>
-         </nav>	      
-	  </div>
+	    
+	    <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img class="logo" src="img/modusVersusLogo.png" alt="Modus versus Company Logo"> </a>
+    </div>
+    <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li> 
+        <li class="dropdown">
+          <a class="dropdown-toggle active" data-toggle="dropdown" href="#"><span class="caret"></span> Portfolio</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Page</a></li>
+            <li><a href="#">Page</a></li>
+            <li><a href="#">Page</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Contacts</a></li> 
+        <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li> 
+      </ul>
+    </div>
+  </div>
+  </nav> 
+	 </div>
 	 </div>
 	 <div class="sub-nav-wrapper"> 
 		 <div class="container mySubNav">
@@ -188,7 +216,7 @@
 
 	<div class="footer">
       <div class="footer-container">
-        <div class="col-md-4">
+        <div class="col-md-3">
           <h2><strong>MODUS</strong>versus</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec.</p>
           <p>
@@ -196,7 +224,7 @@
             e-mail: <em>info@modu.versus</em>
           </p>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-3">
           <h3>Company</h3>
           <ul>
             <li>
@@ -219,7 +247,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-3">
           <h3>Community</h3>
           <ul>
             <li>
@@ -236,19 +264,17 @@
             </li>            
           </ul>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3 readme">
           <h3><em>From the </em>BLOG</h3>
           <ul>
             <li>
-              <span><i class="fa fa-file-image-o" aria-hidden="true"></i></span>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit<br/>
-              <span class="ident"> 26 May, 2013       </span>                
+              <span><i class="fa fa-file-image-o" aria-hidden="true"></i></span></span>
+              <a href="">Mollis mattis blandit ssew ma</a>                            
             </li>
             <li>
-              <span><i class="fa fa-file-image-o" aria-hidden="true"></i></span>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit <br/>
-              <span class="ident"> 26 May, 2013       </span>               
-            </li>            
+              <span><i class="fa fa-file-image-o" aria-hidden="true"></i></span></span>
+              <a href="">Interdum vitae class malesuada accew</a>              
+            </li>       
           </ul>
         </div>
       </div>
@@ -272,21 +298,6 @@
         </div>
       </div>
     </div>
-    <!-- jquery menu-->
-    <script type="text/javascript">
-       $(document).ready(function () {
-    var width = $(window).width();
-    if (width < 1250) {
-        $(".dropdown").hide();
-        $('nav').append($('<button class="responsive-menu">MENU</button>'));
-        }
-        $('.responsive-menu').click(function(){
-        	    $(".dropdown").toggle();
-              });
-        });	
-    $(window).resize(function(){location.reload();});
-   
-    </script>
 
   
 </body>
