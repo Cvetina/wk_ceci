@@ -33,10 +33,14 @@
      button:focus {
       outline:0;
      }
-     .container.myNav ul li {
-    padding: 7px !important;
+     ul.nav.navbar-nav{
+      margin-top: 5px;
+     }
+     .navbar-nav>li>a {
+     padding-top: 7px !important; 
+     padding-bottom: 7px !important; 
     }
-     .active, .navbar-inverse .navbar-nav a:hover {
+      .active, .navbar-inverse .navbar-nav a:hover {
      background: none repeat scroll 0% 0% rgba(98, 162, 158, 0.8) !important;
      border-color: rgba(98, 162, 158, 0.8) !important;
      box-shadow: 0 2px 0 #528B86;
@@ -60,7 +64,7 @@
         border-color: rgba(98, 185, 176, 0.8) !important; 
     }
      .nav-wrapper{
-         background: url(../img/headerBottomLine.png) repeat-x 0 100% rgba(98, 185, 176, 0.8); 
+     background: url(../img/headerBottomLine.png) repeat-x 0 100% rgba(98, 185, 176, 0.8); 
      }
      .navbar-inverse {
       background-color: rgba(255,255,255,0) !important; 
@@ -319,6 +323,7 @@
    .related-projects h4{
     color: #7f8c8c;
     margin-left: -20px;
+    margin-top: -10px;
    }
       .data-project table {
     position: relative;
@@ -541,18 +546,22 @@
     .col-md-3 ul li {
     padding-bottom: 13px;
 }
-  .col-md-3.readme ul li a {
+  .col-md-3.readme ul li span.text-a {
     padding-left: 2.5%;
-    float: right;
     width: 70%;
     cursor: pointer;
     text-align: left;
 }
-    
+.col-md-3.readme h3{
+  color: #fff;
+}
+    p.date{
+      color: #3b6360;
+      text-indent: none;
+    }
     .footer .fa.fa-file-image-o {
-    font-size: 30px;
+    font-size: 28px;
     position: initial;
-    margin-top: 10px;
     color: #ececec;
     padding: 20px;
     background-color: rgb(106, 179, 172);
