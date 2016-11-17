@@ -157,6 +157,10 @@ ul.nav.navbar-nav {
 .container.mySubNav ul li:last-child:after{
      content: "";
 }
+.col-md-6 {
+    width: 50%;
+    padding: 2px;
+}
 .related-projects {
   display: inline-table;
   position: relative;
@@ -386,7 +390,7 @@ div.article {
 
 .related-projects h4 {
   color: #7f8c8c;
-  margin-left: -20px;
+  margin-left: -11px;
   margin-top: -10px;
 }
 
