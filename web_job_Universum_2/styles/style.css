@@ -51,7 +51,7 @@ ul.nav.navbar-nav {
   padding-bottom: 7px !important;
 }
 
-.active,
+.menu-active,
 .navbar-inverse .navbar-nav a:hover {
   background: none repeat scroll 0% 0% rgba(98, 162, 158, 0.8) !important;
   border-color: rgba(98, 162, 158, 0.8) !important;
@@ -174,14 +174,6 @@ img.logo {
   margin: auto;
   color: #7f8c8c;
   font-size: 20px;
-}
-
-nav .dropdown {
-  position: absolute;
-  top: 15%;
-  bottom: 0;
-  right: 0;
-  margin: auto;
 }
 
 nav .dropdown-menu {
