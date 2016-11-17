@@ -45,7 +45,9 @@ button:focus {
 ul.nav.navbar-nav {
   margin-top: 5px;
 }
-
+.logo {
+    margin-left: -25px;
+}
 .navbar-nav>li>a {
   padding-top: 7px !important;
   padding-bottom: 7px !important;
@@ -339,7 +341,7 @@ div.article {
   display: inline-block;
   vertical-align: middle;
   width: 60px !important;
-  height: 5px !important;
+  height: 7px !important;
   background: none repeat scroll 0% 0% #E2534B !important;
   cursor: pointer;
   border-radius: 0px;
@@ -506,7 +508,7 @@ ol.timeline::before,
 ol.timeline::after {
   content: "";
   position: absolute;
-  top: -8px;
+  top: -7px;
   display: block;
   width: 0;
   height: 0;
@@ -646,7 +648,6 @@ p.date {
   background-color: rgb(106, 179, 172);
   border-radius: 5px;
 }
-
 
 /* end footer */
 
