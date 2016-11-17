@@ -761,6 +761,11 @@ p.date {
     top: 200px;
   }
 }
+@media (max-width: 991px) {
+  .description.col-md-6, .data-project.col-md-6 {
+   width: 90%;
+ }
+}
 @media (max-width: 730px) {
   .projects-images {
     width: 50%;
@@ -812,6 +817,10 @@ p.date {
   }
   .data-project table {
     width: 100%;
+  }
+  .data-project h3 {
+    font-size: 18px;
+    text-align: center;
   }
   .slider-wrapper {
     position: relative;
