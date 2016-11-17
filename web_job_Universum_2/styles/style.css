@@ -138,7 +138,25 @@ ul.nav.navbar-nav {
   height: 80px;
   margin: 0 auto;
 }
-
+.container.mySubNav ul    {
+  display: block;
+  padding: 5px 15px;
+  margin-left: 0;
+}
+.container.mySubNav ul li{
+  position: relative;
+}
+.container.mySubNav ul li:after{
+    content: " / ";
+    padding: 0;
+    position: absolute; 
+    top: 7px;
+    right: 0px;
+    float: left;
+   }
+.container.mySubNav ul li:last-child:after{
+     content: "";
+}
 .related-projects {
   display: inline-table;
   position: relative;
