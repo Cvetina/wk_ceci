@@ -382,10 +382,9 @@ div.article {
   padding-bottom: 20px;
 }
 
-.data-project h3 {
+.data-project h4 {
   padding-bottom: 20px;
-  color: #7f8c8c;
-  text-indent: -30%
+  color: #7f8c8c; 
 }
 
 .related-projects h4 {
@@ -730,7 +729,13 @@ p.date {
   .outer.col-md-3 {
     width: 30%;
   }
-}
+  .data-project h4 {
+    text-align: center;
+  }
+  .data-project table tr td {
+    text-align: center;
+  }
+ }
 
 @media (max-width: 998px) {
   .footer-container ul li {
@@ -763,7 +768,8 @@ p.date {
 }
 @media (max-width: 991px) {
   .description.col-md-6, .data-project.col-md-6 {
-   width: 90%;
+   width: 100%;
+   text-align: justify;
  }
 }
 @media (max-width: 730px) {
