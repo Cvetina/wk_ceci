@@ -154,14 +154,6 @@ ul.nav.navbar-nav {
   top: 85px;
 }
 
-img.logo {
-  position: absolute;
-  top: 0;
-  bottom: 15%;
-  left: 0;
-  margin: auto;
-}
-
 .container.mySubNav a:hover {
   color: #e8645a;
 }
@@ -660,6 +652,7 @@ p.date {
 
 
 /* responsive*/
+/*
 
 @media (max-width: 1150px) {
     .navbar-header {
@@ -687,17 +680,7 @@ p.date {
         padding-bottom: 10px;
     }
 }
-
-@media (min-width: 767px) and (max-width: 1330px) {
-  img.logo {
-    position: absolute;
-    top: -120px;
-    bottom: 0;
-    left: 35%;
-    margin: auto;
-  }
-}
-
+*/
 @media (max-width: 1250px) {
   .outer.col-md-3 {
     width: 30%;
@@ -743,7 +726,6 @@ p.date {
     top: 200px;
   }
 }
-
 @media (max-width: 730px) {
   .projects-images {
     width: 50%;
@@ -772,13 +754,6 @@ p.date {
   .carousel-indicators li,
   .carousel-indicators li.active {
     width: 30px !important;
-  }
-  img.logo {
-    position: absolute;
-    top: 50px;
-    left: 0;
-    right: 0;
-    margin: auto;
   }
   .container.mySubNav span,
   .container.mySubNav ul {

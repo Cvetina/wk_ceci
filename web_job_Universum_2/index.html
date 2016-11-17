@@ -11,25 +11,6 @@
   <link rel="stylesheet" type="text/css" href="styles/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script type="text/javascript">
-  function logoWidthTogle() {
-    var minWisthForLogo = 1250;
-    var width = $(window).width();
-    if (width < minWisthForLogo) {
-      $('.navbar-toggle').click(function() {
-        $(".logo").toggle();
-      });
-    }
-  }
-
-  $(document).ready(function() {
-    logoWidthTogle();
-
-    $(window).on('resize', function() {
-      logoWidthTogle();
-    });
-  });
-  </script>
 </head>
 <body>
   <div class="nav-wrapper">
