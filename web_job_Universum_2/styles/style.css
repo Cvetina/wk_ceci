@@ -562,7 +562,7 @@ ol.timeline::after {
 .footer {
   background: url(../img/headerBottomLineUp.png) repeat-x top rgb(118, 199, 192);
   color: #FFF;
-  padding: 40px 0px 50px;
+  padding: 5px 0px 5px;
   margin-top: 250px;
   text-align: center;
 }
@@ -573,7 +573,9 @@ ol.timeline::after {
   padding: 10px;
   text-align: left;
 }
-
+.footer ul li a {
+   padding: 2px 1px 2px 1px;
+}
 .footer-container {
   display: inline-table;
   position: relative;
@@ -721,18 +723,19 @@ p.date {
 
 @media (max-width: 1250px) {
   .outer.col-md-3 {
-    width: 30%;
+    width: 40%;
+    margin: 4%;
   }
-  .outer.col-md-3.col-xs-3.last {
-    display: inline-block;
-    margin-left: 33%;
+.last {
+    content: "";
+    clear: both;
   }
+  .footer-container {
+    width: 95%;
+}
 }
 
 @media (max-width: 1100px) {
-  .outer.col-md-3 {
-    width: 30%;
-  }
   .data-project h4 {
     text-align: center;
   }
@@ -753,13 +756,10 @@ p.date {
   }
   .outer.col-md-3 {
     width: 40%;
+    margin: 2%;
   }
   .top-space {
     padding-top: 30px !important;
-  }
-  .outer.col-md-3.col-xs-3.last {
-    display: inline;
-    margin-left: 1%;
   }
   .projects-images {
     display: inline-table;
