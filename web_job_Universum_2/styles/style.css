@@ -555,6 +555,9 @@ ol.timeline::after {
   width: 78%;
   margin: 0 auto;
 }
+.footer-container .col-md-3 ul{
+  margin-left: 15px;
+}
 
 .footer-container .col-md-3 h3 {
   padding: 15px;
