@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Introducing in JavaScript</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+    
+    //problem 1: Current time
+
+	var time = Date();
+	console.log(time);
+
+	// problem 2: Circle area
+
+	var calcCircleArea = function(radius){ return (Math.PI*radius*radius); };
+
+	var circle_7 = calcCircleArea(7);
+	calcCircleArea(1.5);
+	calcCircleArea(20);
+
+	// problem 3: Decimal to Hexadecimal
+
+	var integer = prompt("Enter a number");
+	
+	if( integer <= 0){
+          alert("Enter positive integer" );
+	   }else{
+	   	    var hex = integer.toString(16);
+            alert(hex);   
+	   };
+	   
+	// problem 4: Clock
+
+		var timer;
+		function startTimer() {
+			timer = setInterval(setTime, 1000);
+		}
+		function stopTimer() {
+			clearInterval(timer);
+		}
+	</script>
+</head>
+<body>
+	<div id="timer">
+	</div>
+	<div id="controls">
+		<a href="#" onclick="startTimer()">Start timer</a>
+		<a href="#" onclick="stopTimer()">Stop timer</a>
+	</div>
+	<script>
+		function setTime() {
+			var time = new Date();
+			var hours = time.getHours();
+		
+			var minutes = time.getMinutes();
+		
+			var seconds = time.getSeconds();
+		
+			document.getElementById("timer").innerHTML = hours + " : " + minutes + " : " + seconds;
+		}
+
+	</script>
+</body>
+</html>
