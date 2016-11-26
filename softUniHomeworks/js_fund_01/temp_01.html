@@ -3,10 +3,10 @@
 <head>
 	<title>Introducing in JavaScript</title>
 	<meta charset="utf-8">
+
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
 	<script type="text/javascript">
     
-    //problem 1: Current time
-
 	var time = Date();
 	console.log(time);
 
@@ -20,16 +20,25 @@
 
 	// problem 3: Decimal to Hexadecimal
 
-	var integer = prompt("Enter a number");
+	var num = parseInt(prompt("Enter a number"));
 	
-	if( integer <= 0){
+	if( num <= 0){
           alert("Enter positive integer" );
-	   }else{
-	   	    var hex = integer.toString(16);
+	   } else {
+	   	    var hex = "Hex: " + num.toString(16);
             alert(hex);   
 	   };
 	   
-	// problem 4: Clock
+	// problem 4.1: Clock
+	function displayClock() {
+		var myDate = new Date();
+		var myClock = myDate.getHours() + " : " +myDate.getMinutes() + " : " + myDate.getSeconds();
+		$("#timerLoad").text(myClock);
+	}
+
+	setInterval('displayClock()', 1000);
+
+	// problem 4.2: Clock
 
 		var timer;
 		function startTimer() {
@@ -43,6 +52,7 @@
 <body>
 	<div id="timer">
 	</div>
+	<div id="timerLoad">lolo</div>
 	<div id="controls">
 		<a href="#" onclick="startTimer()">Start timer</a>
 		<a href="#" onclick="stopTimer()">Stop timer</a>

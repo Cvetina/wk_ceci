@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="game.js"></script>
+  <style type="text/css">
+  #myGame tr td {
+    border: 3px solid #000;
+    width: 100px;
+    height: 100px;
+  }
+  
+  #myGame tr  td {
+    font-size: 62px;
+    text-align: center;
+    cursor: pointer;
+  }
+  </style>
+</head>
+
+<body>
+  <table id="myGame">
+    <tr>
+      <td onclick="switch_cell(12);" id="cell12"></td>
+      <td onclick="switch_cell(13);" id="cell13"></td>
+      <td onclick="switch_cell(11);" id="cell11"></td>
+    </tr>
+    <tr>
+      <td onclick="switch_cell(21);" id="cell21"></td>
+      <td onclick="switch_cell(22);" id="cell22"></td>
+      <td onclick="switch_cell(23);" id="cell23"></td>
+    </tr>
+    <tr>
+      <td onclick="switch_cell(31);" id="cell31"></td>
+      <td onclick="switch_cell(32);" id="cell32"></td>
+      <td onclick="switch_cell(33);" id="cell33"></td>
+    </tr>
+  </table>
+</body>
+
+</html>
