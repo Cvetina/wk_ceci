@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <title></title>
+	  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	  <script type="text/javascript" src="cylinderVol.js"></script>
+	  <script type="text/javascript">
+	  	function parameters () {
+          var inputRadius = document.getElementById('cylinderRadius').value;
+          var inputHeight = document.getElementById('cylinderHeight').value;
+          var cylinderArr = [inputRadius, inputHeight];         
+          var radius = cylinderArr[0];
+          var height = cylinderArr[1];
+          var volumeCylinder = calcCylinderVol(radius, height);
+          document.getElementById('resultVolume').innerHTML = "V = " +(volumeCylinder).toFixed(3);
+	  	}
+	  </script>
+	  <style type="text/css">
+	  table tr td {
+	    border: 3px solid #000;
+	    width: 200px;
+	    height: 150px;
+	  	 } 
+	  table tr td {
+	    font-size: 32px;
+	    text-align: center;
+	    cursor: pointer;
+	 	 }
+	  table tr td input{
+	    height: 50px;
+	    text-align: center;
+	    margin-bottom: 5px;
+	  	}
+	  table tr td {
+	    font-size: 32px
+	    }
+  </style>
+</head>
+<body>
+      <table>
+      	<tr>
+      		<td>Parameters</td>
+      		<td>Result</td>
+      	</tr>
+      	<tr>
+      		<td>
+      		  <input type="number" id="cylinderRadius" placeholder="radius">
+      		  <input type="number" id="cylinderHeight" placeholder="height">
+      		</td>
+      		<td onclick="parameters();" id="resultVolume"> </td>
+      	</tr>
+      </table>
+</body>
+</html>

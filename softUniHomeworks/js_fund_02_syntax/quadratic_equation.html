@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="quadratic_equation.js"></script>
+  <script type="text/javascript">
+  	function quadraticEquationLocal() {
+		var coefA = document.getElementById('coef-a').value;
+		var coefB = document.getElementById('coef-b').value;
+		var coefC = document.getElementById('coef-c').value;
+		
+		var result = quadraticEquation(coefA, coefB, coefC);
+
+		document.getElementById('result-x').innerHTML =  result;
+	}
+  	
+  </script>
+  <style type="text/css">
+  table tr td {
+    border: 3px solid #000;
+    width: 200px;
+    height: 100px;
+  }
+  
+  table tr td {
+    font-size: 62px;
+    text-align: center;
+    cursor: pointer;
+  }
+  table tr td sup{
+    font-size: 32px;
+  }
+    table tr td input{
+    height: 50px;
+    text-align: center;
+  }
+   table tr td {
+    font-size: 62px
+  }
+  </style>
+</head>
+
+<body>
+  <table>
+    <tr>
+      <td  colspan="2">ax<sup>2</sup> + bx + c</td>
+    </tr>
+    <tr>
+      <td rowspan="3">
+      	<input type="number" id="coef-a" placeholder="a &#8800; 0">
+      	<input type="number" id="coef-b" placeholder="b">
+      	<input type="number" id="coef-c" placeholder="c">
+      </td>
+      <td rowspan="3" id ="result-x" onclick="quadraticEquationLocal();"></td>
+    </tr>
+  </table>
+</body>
+
+</html>

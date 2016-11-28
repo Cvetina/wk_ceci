@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="kmToKnots.js"></script>
+    <script type="text/javascript">
+    	function calcKnots() {
+	    	var inputKilometer =  document.getElementById('kmInput').value;
+	    	var theResultKnots = kmToKnots(inputKilometer);
+	    	document.getElementById('resultKnots').innerHTML = (theResultKnots).toFixed(2);
+    	}
+    </script>
+    <style type="text/css">
+    	table tr td {
+		    border: 3px solid #000;
+		    width: 200px;
+		    height: 70px;
+		    }
+        table tr td {
+		    font-size: 62px;
+		    text-align: center;
+		    cursor: pointer;
+		    }
+		table tr td input{
+		    height: 50px;
+		    text-align: center;
+		    margin-bottom: 17px;
+		    }
+    </style>
+</head>
+<body>
+   <table>
+   	  <tr>
+   	  	<td><input type="number" placeholder="insert km/h" id="kmInput"></td>
+   	  	<td id="resultKnots" onclick="calcKnots();"></td>
+   	  </tr>
+   </table>
+</body>
+</html>
