@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	 <script type="text/javascript" src="calculateExpressions.js"></script>
+	 <script type="text/javascript">
+	 	function evalExpressions(){
+	 	    var inputExpressions = document.getElementById('inputData').value;
+	 	    var resultCalc = calcInputExpressions(inputExpressions);
+	 	    document.getElementById('outputData').innerHTML = resultCalc;
+
+	    };
+	 </script>
+	 <style type="text/css">
+	 	  input, button, p {
+	 		margin-top: 10px;
+	 		width: 200px;
+	 		height: 50px;
+	 		border: 1px solid #147C8A;
+	 		text-align: center;
+	 		font-weight: bold;
+	 		font-size: 20px;
+	 	     }
+	      input, p {
+	 		background-color: #147C8A;
+	 		color: #fff;
+	 	     }
+	 	     p{
+	 	     	padding-top: 30px;
+	 	     }
+	 	    button{
+	 	     	color: #147C8A;
+	 	     	font-variant: small-caps;
+	 	     }
+	 </style>
+</head>
+<body>
+   <input type="text" id="inputData"> <br/>
+   <button id="buttonEval" onclick="evalExpressions()">Eval result</button> <br/>
+   <p id="outputData"></p>
+
+</body>
+</html>

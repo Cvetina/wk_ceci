@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="lifetimeSupplyCalc.js"></script>
+	<script type="text/javascript">
+	  function lifetimeSupply()  {
+	  	var age = document.getElementById('yourAge').value;
+	  	var maxAge = document.getElementById('yourMaxAge').value;
+	  	var food = document.getElementById('yourFood').value;
+	  	var foodPerDay = document.getElementById('favFoodPerDay').value;
+	  	var result = calcSupply(age, maxAge, foodPerDay) + ' of ' + food + ' would be enough until I am ' + maxAge + ' years old.';
+        document.getElementById('yourLifetimeSupply').innerHTML = result;
+	  };
+		
+	</script>
+	 <style type="text/css">
+	  table tr td {
+	    border: 3px solid #000;
+	    width: 300px;
+	    height: 100px;
+	  	 } 
+	  table tr td {
+	    font-size: 18px;
+	    text-align: center;
+	    cursor: pointer;
+	 	 }
+	  table tr td input{
+	    height: 50px;
+	    text-align: center;
+	    margin-bottom: 5px;
+	  	}
+	  table tr td {
+	    font-size: 32px
+	    }
+  </style>
+</head>
+<body>
+   <table>
+      	<tr>
+      		<td>Parameters</td>
+      		<td>Result</td>
+      	</tr>
+      	<tr>
+      		<td>
+      		  <input type="number" id="yourAge" placeholder="your age">
+      		</td> 
+      		<td onclick="lifetimeSupply();" id="yourLifetimeSupply" rowspan="4"> </td>		
+      	</tr>
+      		<td>
+      		  <input type="number" id="yourMaxAge" placeholder="your max age">
+      		</td> 
+      	</tr>
+      	</tr>
+      		<td>
+      		  <input type="text" id="yourFood" placeholder="favourite food">
+      		</td> 
+      	</tr>
+      	</tr>
+      		<td>
+      		  <input type="number" id="favFoodPerDay" step="0.01" placeholder="food per day">
+      		</td> 
+      	</tr>
+
+      </table>
+</body>
+</html>
