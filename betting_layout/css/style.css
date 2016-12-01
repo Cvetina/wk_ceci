@@ -31,7 +31,12 @@ ul li{
 	padding: 0;
 	margin: 0;
 }
-
+.col-md-6, .col-xs-6 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 0px;
+    padding-left: 0px; 
+}
 .main-wrapper{
 	max-width: 1500px;
 	margin: 0 auto;
@@ -44,6 +49,11 @@ ul li{
 	max-width: 98%;
     margin-left: 15px;
     margin-right: 15px;
+    text-align: center;
+}
+.today-jackpot{
+	font-size: 40px;
+	color: ;
 }
 /* style nav bar */  
 .navbar-default .navbar-brand{
@@ -65,7 +75,25 @@ ul li{
 
 /* end style nav */
 
+/* blinker animation*/
+ .banner-wrapper{
+ 	width: 100%;
+ }
+.blink-me {
+  animation: blinker 2s linear infinite;
+  width: 66,666%;
+  text-align: center;
+  font-size: 32px;
+  color: #f66414;
+}
 
+@keyframes blinker { 
+  0%  { opacity: 1; } 
+  50% { opacity: 0.5; }
+  100% { opacity: 0; }
+}
+
+/*end of blinker animation*/
 
 /* bounce effect*/
  @-webkit-keyframes pulse {
@@ -131,6 +159,20 @@ ul li{
 	margin-left: 10px;
 	margin-right: 10px;
 	border-bottom: 1px solid rgba(13,41,69, 0.5);
+    background: rgba(105,117,36,1);
+	background: -moz-linear-gradient(left, rgba(105,117,36,1) 0%, rgba(11,51,8,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(105,117,36,1)), color-stop(100%, rgba(11,51,8,1)));
+	background: -webkit-linear-gradient(left, rgba(105,117,36,1) 0%, rgba(11,51,8,1) 100%);
+	background: -o-linear-gradient(left, rgba(105,117,36,1) 0%, rgba(11,51,8,1) 100%);
+	background: -ms-linear-gradient(left, rgba(105,117,36,1) 0%, rgba(11,51,8,1) 100%);
+	background: linear-gradient(to right, rgba(105,117,36,1) 0%, rgba(11,51,8,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#697524', endColorstr='#0b3308', GradientType=1 );
+ }
+.col-md-12.tabs-first{
+    padding: 15px;
+}
+.middle-section .row .col-md-12:hover,
+ .tab-content .tab-pane .col-md-6:hover{
     background: rgba(90,99,31,1);
 	background: -moz-linear-gradient(left, rgba(90,99,31,1) 0%, rgba(7,31,5,1) 100%);
 	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(90,99,31,1)), color-stop(100%, rgba(7,31,5,1)));
@@ -139,21 +181,12 @@ ul li{
 	background: -ms-linear-gradient(left, rgba(90,99,31,1) 0%, rgba(7,31,5,1) 100%);
 	background: linear-gradient(to right, rgba(90,99,31,1) 0%, rgba(7,31,5,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5a631f', endColorstr='#071f05', GradientType=1 );
-    padding: 15px 0px 15px 10px;
-}
-.middle-section .row:hover{
-	background: rgba(105,117,36,1);
-	background: -moz-linear-gradient(left, rgba(105,117,36,1) 0%, rgba(11,51,8,1) 100%);
-	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(105,117,36,1)), color-stop(100%, rgba(11,51,8,1)));
-	background: -webkit-linear-gradient(left, rgba(105,117,36,1) 0%, rgba(11,51,8,1) 100%);
-	background: -o-linear-gradient(left, rgba(105,117,36,1) 0%, rgba(11,51,8,1) 100%);
-	background: -ms-linear-gradient(left, rgba(105,117,36,1) 0%, rgba(11,51,8,1) 100%);
-	background: linear-gradient(to right, rgba(105,117,36,1) 0%, rgba(11,51,8,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#697524', endColorstr='#0b3308', GradientType=1 );
+
+ 
 }
 .middle-section .my-tabs,
 .middle-section .my-tabs .row{
-	background: rgba(164,179,87,1);
+background: rgba(164,179,87,1);
 background: -moz-linear-gradient(top, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
 background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(164,179,87,1)), color-stop(100%, rgba(117,137,12,1)));
 background: -webkit-linear-gradient(top, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
@@ -177,8 +210,9 @@ background: linear-gradient(to bottom, rgba(164,179,87,1) 0%, rgba(117,137,12,1)
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4b357', endColorstr='#75890c', GradientType=0 );
 }
 .middle-section .row .col-md-6{
-	padding: 0;
+	padding-top: 15px;
 	text-align: center;
+	border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 .tabs-first .collapse{
   color: #fff;
@@ -186,6 +220,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4b357', end
 .middle-section .row .col-md-6 span{
 	display: inline-block;
     width: 25%;
+    border-left: 1px solid rgba(255,255,255,0.1);
 }
 #dota .row .col-md-6 span,
 #counter-strike .row .col-md-6 span,
@@ -204,12 +239,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4b357', end
 #star-craft .row .col-md-6:first-child, 
 #star-craft .row .col-md-6:nth-child(2){
     background-color: #0f2e4d;
-}
-#dota .row .col-md-6,
-#counter-strike .row .col-md-6,
-#hon .row .col-md-6,
-#star-craft .row .col-md-6{
-    padding: 5px;
 }
 #dota .row, #counter-strike .row{
 	border: none;
@@ -232,16 +261,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4b357', end
    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .3);
 }
 .nav-tabs {
-   border-bottom: 1px solid rgba(13,41,69, 0.5);
+    border-bottom: 1px solid rgba(13,41,69, 0.5);
+    padding: 5px;
+    margin: 0;
+    text-align: center;
 }
+.nav-tabs>li{ 
+     display: inline-table;
+     float: none;
+ }
 .nav-tabs>li.active>a, 
 .nav-tabs>li.active>a:focus, 
 .nav-tabs>li.active>a:hover,
 .nav-tabs>li>a:hover {
     color: #fff;
     cursor: default;
-    background-color: #3a4504;
-    border: 1px solid #3a4504;
+    background-color:rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.3);;
     border-bottom-color: transparent;
     box-shadow: none;
     -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .3);
@@ -255,7 +291,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4b357', end
     cursor: default;
     background-color: #0f2e4d;
     border: 1px solid #0f2e4d;
-    border-bottom-color: transparent;
     box-shadow: none;
 }
 /* end style main content */
@@ -416,20 +451,48 @@ footer {
     font-size: 9px;
  }
 }
-/*
-@media (max-width: 990px){
-	.middle-section .row{
-	margin-left: 0;
-	margin-right: 0;
+@media (max-width: 990px ){
+	.right-sidebar, .my-tabs-up, footer {
+    margin-top: 20px;
  }
- .my-tabs-up{
- 	margin-top: 25px;
+ .left-sidebar{
+    margin-top: 50px;
  }
- div.row.my-tabs{
- 	margin-bottom: 15px;
+ .middle-section .row {
+  margin-right: 0px;
+  margin-left: 0px;
+ }
+ .col-md-8{
+ 	padding-left: 1px;
+ 	padding-right: 1px;
+ }
+ .col-xs-12 {
+    width: 97%;
+}
+.jackpot, .jackpot ul{
+	text-align: center;
+	padding-bottom: 10px;
+}
+}
+@media (max-width: 990px ){
+ .today-jackpot, .blink-me {
+ 	font-size: 28px;
  }
 }
-*/
+@media (max-width: 550px ){
+ .today-jackpot, .blink-me {
+ 	font-size: 18px;
+ }
+}
+@media (max-width: 380px ){
+ .today-jackpot, .blink-me {
+ 	display: block;
+ }
+  .left-sidebar{
+    margin-top: 70px;
+ }
+}
+
 @media (max-width: 870px) {
     .navbar-header {
         float: none;
@@ -490,7 +553,7 @@ footer {
     font-weight: bold;
  }
   .middle-section .my-tabs .row .col-xs-6 span{
-    color: #0f2e4d;
+    color: #fff;
   }
  .middle-section .row {
  	margin-right: 1px;

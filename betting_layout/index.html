@@ -11,8 +11,16 @@
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/function.js"></script>
-
+  <script type="text/javascript" src="js/functions.js"></script>
+  <script type="text/javascript">
+    
+    document.addEventListener("touchstart", function(){}, true);
+     $(document).on('click', '.navbar-collapse.in', function (e) {
+      if ($(e.target).is('a')) {
+        $(this).collapse('hide');
+      }
+    });
+  </script>
   <body>
     <div class="main-wrapper">
       <div class="col-md-12 my-nav-wrapper">
@@ -43,8 +51,14 @@
         </nav>
       </div>
       <div class="col-md-12 banner-wrapper">
-        <div class="bonuses">
+        <div class="bonuses col-md-2">
           <a href="" class="pulse"><h2><img src="img/get_bonus.png"></h2></a>
+        </div>
+        <div class="col-md-8">
+          <span class="blink-me"><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i></span><span class="today-jackpot"> Jackpot 20 000 &euro;</span><span class="blink-me"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i></span>
+        </div>
+        <div class="bonuses col-md-2">
+        
         </div>
       </div>
       <div class="col-md-12 my-body-wrapper">
@@ -53,9 +67,9 @@
           <div class="jackpot">
             <h2>Jackpot</h2>
             <ul>
-              <li> <span class="span-left">Platinum:</span> <span class="span-right"> 256</span></li>
-              <li> <span>Gold</span> <span></span></li>
-              <li> <span>Silver</span> <span></span></li>
+              <li> <span class="span-left">Platinum:</span> <span class="span-right"> 256 &euro;</span></li>
+              <li> <span>Gold:</span> 201 &euro;<span></span></li>
+              <li> <span>Silver:</span> 6.70 &euro;<span></span></li>
             </ul>
           </div>
           <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#eurosport-left"><i class="fa fa-chevron-down" aria-hidden="true"></i> Esports</button>
@@ -87,8 +101,8 @@
             <div class="row my-tabs-up">
               <!-- Nav tabs up-->
               <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a href="#24HoursEvents" aria-controls="home" role="tab" data-toggle="tab">Next 24h</a></li>
-                <li role="presentation"><a href="#allEvents" aria-controls="profile" role="tab" data-toggle="tab">All events</a></li>
+                <li role="presentation" class="active"><a href="#24HoursEvents" aria-controls="home" role="tab" data-toggle="tab">Next 24h <img src="img/events24hours.png"/></a></li>
+                <li role="presentation"><a href="#allEvents" aria-controls="profile" role="tab" data-toggle="tab">All events <img src="img/events24-7hours.png"/></a></li>
               </ul>
               <!-- Tab pane 24 hours -->
               <div class="tab-content">
@@ -523,10 +537,10 @@
             <div class="row my-tabs">
               <!-- Nav tabs down-->
               <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a href="#dota" aria-controls="dota" role="tab" data-toggle="tab"><i class="fa fa-circle-o-notch" aria-hidden="true"></i> Dota</a></li>
-                <li role="presentation"><a href="#counter-strike" aria-controls="counter-strike" role="tab" data-toggle="tab"><i class="fa fa-circle-o-notch" aria-hidden="true"></i> Counter strike</a></li>
-                <li role="presentation"><a href="#hon" aria-controls="hon" role="tab" data-toggle="tab"><i class="fa fa-circle-o-notch" aria-hidden="true"></i> HON</a></li>
-                <li role="presentation"><a href="#star-craft" aria-controls="star-craft" role="tab" data-toggle="tab"><i class="fa fa-circle-o-notch" aria-hidden="true"></i> Star Craft</a></li>
+                <li role="presentation" class="active"><a href="#dota" aria-controls="dota" role="tab" data-toggle="tab"><img src="img/DOTA2_logo.png"> Dota</a></li>
+                <li role="presentation"><a href="#counter-strike" aria-controls="counter-strike" role="tab" data-toggle="tab"><img src="img/CS_logo.png"> Counter strike</a></li>
+                <li role="presentation"><a href="#hon" aria-controls="hon" role="tab" data-toggle="tab"><img src="img/HoN_logo.png"> HON</a></li>
+                <li role="presentation"><a href="#star-craft" aria-controls="star-craft" role="tab" data-toggle="tab"><img src="img/sc2_logo.png"> Star Craft</a></li>
               </ul>
               <!-- Tab panes -->
               <div class="tab-content">
@@ -748,9 +762,8 @@
           </div>
         </div>
       </div>
-    </div>
-    <!-- footer -->
-    <footer class="col-md-12 col-xs-12">
+          <!-- footer -->
+       <footer class="col-md-12 col-xs-12">
       <div class="col-md-12 col-xs-12">
         <div class="col-md-3 col-xs-3">
           <ul class="nav-footer">
@@ -784,9 +797,12 @@
               <li><a href="#">Privacy Policy</a></li>           
             </ul>
         </div>
-      </div>
-      
+      </div>  
     </footer>
+    <!-- end footer-->
+    </div>
+
+   
     
   </body>
 
