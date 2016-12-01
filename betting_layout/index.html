@@ -10,6 +10,7 @@
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/function.js"></script>
 
   <body>
     <div class="main-wrapper">
@@ -23,16 +24,15 @@
             </button>
           </div>
           <a class="navbar-brand navbar-center" href="#">
-            <img src="" alt="Logo Here">
           </a>
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-left">
-              <li><a href="#itemonelink">Item One</a></li>
-              <li><a href="#itemtwolink">Item Two</a></li>
-              <li><a href="#itemonelink">Item One</a></li>
-              <li><a href="#itemtwolink">Item Two</a></li>
-              <li><a href="#itemonelink">Item One</a></li>
-              <li><a href="#itemtwolink">Item Two</a></li>
+              <li><a href="#itemonelink">ESPORT</a></li>
+              <li><a href="#">SPORT</a></li>
+              <li><a href="#">INPLAY</a></li>
+              <li><a href="#">SLOTS</a></li>
+              <li><a href="#">LIVE CASINO</a></li>
+              <li><a href="#">FAQ</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#signuplink"><i class="fa fa-sign-in" aria-hidden="true"></i> Signup</a></li>
@@ -43,20 +43,22 @@
       </div>
       <div class="col-md-12 banner-wrapper">
         <div class="bonuses">
-          <h2>Get your bonus here</h2></div>
+          <a href="" class="pulse"><h2><img src="img/get_bonus.png"></h2></a>
+        </div>
       </div>
       <div class="col-md-12 my-body-wrapper">
+        <!-- Left side bar -->
         <div class="col-md-2 left-sidebar">
           <div class="jackpot">
-            <h3>Jackpot</h3>
+            <h2>Jackpot</h2>
             <ul>
               <li> <span class="span-left">Platinum:</span> <span class="span-right"> 256</span></li>
               <li> <span>Gold</span> <span></span></li>
               <li> <span>Silver</span> <span></span></li>
             </ul>
           </div>
-          <div><i class="fa fa-chevron-down" aria-hidden="true"></i> e-sports</div>
-          <ul class="left-sidebar-nav">
+          <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#eurosport-left"><i class="fa fa-chevron-down" aria-hidden="true"></i> Esports</button>
+          <ul id="eurosport-left" class="left-sidebar-nav collapse">
             <li> <a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> esport</a></li>
             <li> <a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> esport</a></li>
             <li> <a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> esport</a></li>
@@ -78,239 +80,702 @@
             <li> <a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> Tennis</a></li>
           </ul>
         </div>
+        <!-- Main container -->
         <div class="col-md-8 cneter-container">
           <div class="middle-section">
             <div class="row my-tabs-up">
-              <!-- Nav tabs -->
+              <!-- Nav tabs up-->
               <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Next 24h</a></li>
-                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">All events</a></li>
+                <li role="presentation" class="active"><a href="#24HoursEvents" aria-controls="home" role="tab" data-toggle="tab">Next 24h</a></li>
+                <li role="presentation"><a href="#allEvents" aria-controls="profile" role="tab" data-toggle="tab">All events</a></li>
               </ul>
-              <!-- Tab panes -->
+              <!-- Tab pane 24 hours -->
               <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active" id="home">
+                <div role="tabpanel" class="tab-pane active" id="24HoursEvents">
                   <div class="row">
-                    <div class="col-md-9">some text some textsome textsome textsome textsome textsome textsome text textsome textsome text
+                    <div class="col-md-12 tabs-first">Professional Football League Europe 2016 - Match Super Cup Еurope
                       <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
                       <div id="demo" class="collapse">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <div class="col-md-6 col-sm-6 col-xs-6"><strong>Football Proffesional Legue </strong></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
+	                    
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+11</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>2.59</span><span>+11</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+11</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+7</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>1.16</span><span>+7</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+7</span></div>
                       </div>
                     </div>
-                    <div class="col-md-3"><span> Market </span><span> 1 </span><span>  2 </span><span> <i class="fa fa-star"></i></span>
-                    </div>
+                  
                   </div>
                   <div class="row">
-                    <div class="col-md-9">some text some textsome textsome textsome textsome textsome textsome text textsome textsome text
+                    <div class="col-md-12 tabs-first">World Professional Football League 2016 - Match World Super Cup
                       <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
                       <div id="demo1" class="collapse">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <div class="col-md-6 col-sm-6 col-xs-6"><strong>Football Proffesional Legue </strong></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
+	                    
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+11</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>2.59</span><span>+11</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+11</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+7</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>1.16</span><span>+7</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+7</span></div>
                       </div>
                     </div>
-                    <div class="col-md-3"><span> Market </span><span> 1 </span><span>  2 </span><span> <i class="fa fa-star"></i></span>
-                    </div>
+                  
                   </div>
                   <div class="row">
-                    <div class="col-md-9">some text some textsome textsome textsome textsome textsome textsome text textsome textsome text
+                    <div class="col-md-12 tabs-first">Professional Football League Europe 2016 - Match Super Cup Еurope
                       <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
                       <div id="demo2" class="collapse">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <div class="col-md-6 col-sm-6 col-xs-6"><strong>Football Proffesional Legue </strong></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
+	                    
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+11</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>2.59</span><span>+11</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+11</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+7</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>1.16</span><span>+7</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+7</span></div>
                       </div>
                     </div>
-                    <div class="col-md-3"><span> Market </span><span> 1 </span><span>  2 </span><span> <i class="fa fa-star"></i></span>
+                  
+                  </div>
+                   <div class="row">
+                    <div class="col-md-12 tabs-first">World Professional Football League 2016 - Match World Super Cup
+                      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo3"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+                      <div id="demo3" class="collapse">
+                        <div class="col-md-6 col-sm-6 col-xs-6"><strong>Football Proffesional Legue </strong></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
+	                    
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+11</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>2.59</span><span>+11</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+11</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+7</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>1.16</span><span>+7</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+7</span></div>
+                      </div>
                     </div>
+                  
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 tabs-first">Professional Football League Europe 2016 - Match Super Cup Еurope
+                      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo4"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+                      <div id="demo4" class="collapse">
+                        <div class="col-md-6 col-sm-6 col-xs-6"><strong>Football Proffesional Legue </strong></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
+	                    
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+11</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>2.59</span><span>+11</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+11</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+7</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>1.16</span><span>+7</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+7</span></div>
+                      </div>
+                    </div>
+                  
+                  </div>
+                   <div class="row">
+                    <div class="col-md-12 tabs-first">World Professional Football League 2016 - Match World Super Cup
+                      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo5"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+                      <div id="demo5" class="collapse">
+                        <div class="col-md-6 col-sm-6 col-xs-6"><strong>Football Proffesional Legue </strong></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
+	                    
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+11</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>2.59</span><span>+11</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+11</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+7</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>1.16</span><span>+7</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+7</span></div>
+                      </div>
+                    </div>
+                  
                   </div>
                 </div>
-                <div role="tabpanel" class="tab-pane" id="profile">
-                  <div class="row">
-                    <div class="col-md-9">some text some textsome textsome textsome textsome textsome textsome text textsome textsome text
-                      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1-1"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
-                      <div id="demo1-1" class="collapse">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      </div>
-                    </div>
-                    <div class="col-md-3"><span> Market </span><span> 1 </span><span>  2 </span><span> <i class="fa fa-star"></i></span>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-9">some text some textsome textsome textsome textsome textsome textsome text textsome textsome text
-                      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1-2"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
-                      <div id="demo1-2" class="collapse">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      </div>
-                    </div>
-                    <div class="col-md-3"><span> Market </span><span> 1 </span><span>  2 </span><span> <i class="fa fa-star"></i></span>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-9">some text some textsome textsome textsome textsome textsome textsome text textsome textsome text
-                      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1-3"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
-                      <div id="demo1-3" class="collapse">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      </div>
-                    </div>
-                    <div class="col-md-3"><span> Market </span><span> 1 </span><span>  2 </span><span> <i class="fa fa-star"></i></span>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-9">some text some textsome textsome textsome textsome textsome textsome text textsome textsome text
-                      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1-4"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
-                      <div id="demo1-4" class="collapse">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      </div>
-                    </div>
-                    <div class="col-md-3"><span> Market </span><span> 1 </span><span>  2 </span><span> <i class="fa fa-star"></i></span>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-9">some text some textsome textsome textsome textsome textsome textsome text textsome textsome text
-                      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1-5"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
-                      <div id="demo1-5" class="collapse">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      </div>
-                    </div>
-                    <div class="col-md-3"><span> Market </span><span> 1 </span><span>  2 </span><span> <i class="fa fa-star"></i></span>
-                    </div>
-                  </div>
-                        <div class="row">
-                    <div class="col-md-9">some text some textsome textsome textsome textsome textsome textsome text textsome textsome text
-                      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1-6"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
-                      <div id="demo1-6" class="collapse">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      </div>
-                    </div>
-                    <div class="col-md-3"><span> Market </span><span> 1 </span><span>  2 </span><span> <i class="fa fa-star"></i></span>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-9">some text some textsome textsome textsome textsome textsome textsome text textsome textsome text
-                      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1-7"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
-                      <div id="demo1-7" class="collapse">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      </div>
-                    </div>
-                    <div class="col-md-3"><span> Market </span><span> 1 </span><span>  2 </span><span> <i class="fa fa-star"></i></span>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-9">some text some textsome textsome textsome textsome textsome textsome text textsome textsome text
-                      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1-8"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
-                      <div id="demo1-8" class="collapse">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      </div>
-                    </div>
-                    <div class="col-md-3"><span> Market </span><span> 1 </span><span>  2 </span><span> <i class="fa fa-star"></i></span>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-9">some text some textsome textsome textsome textsome textsome textsome text textsome textsome text
-                      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1-9"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
-                      <div id="demo1-9" class="collapse">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      </div>
-                    </div>
-                    <div class="col-md-3"><span> Market </span><span> 1 </span><span>  2 </span><span> <i class="fa fa-star"></i></span>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-9">some text some textsome textsome textsome textsome textsome textsome text textsome textsome text
-                      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1-10"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
-                      <div id="demo1-10" class="collapse">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      </div>
-                    </div>
-                    <div class="col-md-3"><span> Market </span><span> 1 </span><span>  2 </span><span> <i class="fa fa-star"></i></span>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-9">some text some textsome textsome textsome textsome textsome textsome text textsome textsome text
-                      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1-11"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
-                      <div id="demo1-11" class="collapse">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      </div>
-                    </div>
-                    <div class="col-md-3"><span> Market </span><span> 1 </span><span>  2 </span><span> <i class="fa fa-star"></i></span>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-9">some text some textsome textsome textsome textsome textsome textsome text textsome textsome text
-                      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1-12"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
-                      <div id="demo1-12" class="collapse">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      </div>
-                    </div>
-                    <div class="col-md-3"><span> Market </span><span> 1 </span><span>  2 </span><span> <i class="fa fa-star"></i></span>
-                    </div>
-                  </div>
+                <!-- Tab pane All Events -->
+                <div role="tabpanel" class="tab-pane" id="allEvents">
+                   <div class="row">
+                    <div class="col-md-12 tabs-first">World Professional Football League 2016 - Match World Super Cup
+                      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2-1"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+                      <div id="demo2-1" class="collapse">
+                        <div class="col-md-6 col-sm-6 col-xs-6"><strong>Football Proffesional Legue </strong></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
+	                    
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+11</span></div>
 
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>2.59</span><span>+11</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+11</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+7</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>1.16</span><span>+7</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+7</span></div>
+                      </div>
+                    </div>
+                  
+                  </div>
+                   <div class="row">
+                    <div class="col-md-12 tabs-first">World Professional Football League 2016 - Match World Super Cup
+                      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2-2"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+                      <div id="demo2-2" class="collapse">
+                        <div class="col-md-6 col-sm-6 col-xs-6"><strong>Football Proffesional Legue </strong></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
+	                    
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+11</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>2.59</span><span>+11</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+11</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+7</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>1.16</span><span>+7</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+7</span></div>
+                      </div>
+                    </div>
+                  
+                  </div>
+                   <div class="row">
+                    <div class="col-md-12 tabs-first">World Professional Football League 2016 - Match World Super Cup
+                      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2-3"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+                      <div id="demo2-3" class="collapse">
+                        <div class="col-md-6 col-sm-6 col-xs-6"><strong>Football Proffesional Legue </strong></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
+	                    
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+11</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>2.59</span><span>+11</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+11</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+7</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>1.16</span><span>+7</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+7</span></div>
+                      </div>
+                    </div>
+                  
+                  </div>
+                   <div class="row">
+                    <div class="col-md-12 tabs-first">World Professional Football League 2016 - Match World Super Cup
+                      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2-4"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+                      <div id="demo2-4" class="collapse">
+                        <div class="col-md-6 col-sm-6 col-xs-6"><strong>Football Proffesional Legue </strong></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
+	                    
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+11</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>2.59</span><span>+11</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+11</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+7</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>1.16</span><span>+7</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+7</span></div>
+                      </div>
+                    </div>
+                  
+                  </div>
+                   <div class="row">
+                    <div class="col-md-12 tabs-first">World Professional Football League 2016 - Match World Super Cup
+                      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2-5"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+                      <div id="demo2-5" class="collapse">
+                        <div class="col-md-6 col-sm-6 col-xs-6"><strong>Football Proffesional Legue </strong></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
+	                    
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+11</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>2.59</span><span>+11</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+11</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+7</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>1.16</span><span>+7</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+7</span></div>
+                      </div>
+                    </div>
+                  
+                  </div>
+                   <div class="row">
+                    <div class="col-md-12 tabs-first">World Professional Football League 2016 - Match World Super Cup
+                      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2-6"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+                      <div id="demo2-6" class="collapse">
+                        <div class="col-md-6 col-sm-6 col-xs-6"><strong>Football Proffesional Legue </strong></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
+	                    
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+11</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>2.59</span><span>+11</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+11</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+7</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>1.16</span><span>+7</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+7</span></div>
+                      </div>
+                    </div>
+                  
+                  </div>
+                   <div class="row">
+                    <div class="col-md-12 tabs-first">World Professional Football League 2016 - Match World Super Cup
+                      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2-7"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+                      <div id="demo2-7" class="collapse">
+                        <div class="col-md-6 col-sm-6 col-xs-6"><strong>Football Proffesional Legue </strong></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
+	                    
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+11</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>2.59</span><span>+11</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+11</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+7</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>1.16</span><span>+7</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+7</span></div>
+                      </div>
+                    </div>
+                  
+                  </div>
+                   <div class="row">
+                    <div class="col-md-12 tabs-first">World Professional Football League 2016 - Match World Super Cup
+                      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2-8"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+                      <div id="demo2-8" class="collapse">
+                        <div class="col-md-6 col-sm-6 col-xs-6"><strong>Football Proffesional Legue </strong></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
+	                    
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+11</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>2.59</span><span>+11</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+11</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+7</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>1.16</span><span>+7</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+7</span></div>
+                      </div>
+                    </div>
+                  
+                  </div>
+                   <div class="row">
+                    <div class="col-md-12 tabs-first">World Professional Football League 2016 - Match World Super Cup
+                      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2-9"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+                      <div id="demo2-9" class="collapse">
+                        <div class="col-md-6 col-sm-6 col-xs-6"><strong>Football Proffesional Legue </strong></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
+	                    
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+11</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>2.59</span><span>+11</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+11</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+7</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>1.16</span><span>+7</span></div>
+
+	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+7</span></div>
+                      </div>
+                    </div>
+                  
+                  </div>
 
                 </div>
               </div>
             </div>
             <div class="row my-tabs">
-              <!-- Nav tabs -->
+              <!-- Nav tabs down-->
               <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
-                <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
-                <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+                <li role="presentation" class="active"><a href="#dota" aria-controls="dota" role="tab" data-toggle="tab"><i class="fa fa-circle-o-notch" aria-hidden="true"></i> Dota</a></li>
+                <li role="presentation"><a href="#counter-strike" aria-controls="counter-strike" role="tab" data-toggle="tab"><i class="fa fa-circle-o-notch" aria-hidden="true"></i> Counter strike</a></li>
+                <li role="presentation"><a href="#hon" aria-controls="hon" role="tab" data-toggle="tab"><i class="fa fa-circle-o-notch" aria-hidden="true"></i> HON</a></li>
+                <li role="presentation"><a href="#star-craft" aria-controls="star-craft" role="tab" data-toggle="tab"><i class="fa fa-circle-o-notch" aria-hidden="true"></i> Star Craft</a></li>
               </ul>
               <!-- Tab panes -->
               <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active" id="home">.</div>
-                <div role="tabpanel" class="tab-pane" id="profile">..</div>
-                <div role="tabpanel" class="tab-pane" id="messages">...</div>
-                <div role="tabpanel" class="tab-pane" id="settings">....</div>
+                <div role="tabpanel" class="tab-pane active" id="dota">
+                  <div class="row">                
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><strong>DOTA 2 Proffesional Legue </strong></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6">05.12.2016, 12:40 LGD Gaming vs Cyber</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+8</span></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6">05.12.2016, 12:40 Esport vs Cyber</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+8</span></div>
+                    </div>
+                    <div class="row">                
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><strong>DOTA 2 Proffesional Legue </strong></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6">05.12.2016, 12:40 LGD Gaming vs Cyber</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+8</span></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6">05.12.2016, 12:40 Esport vs Cyber</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+8</span></div>
+                    </div>
+                    <div class="row">                 
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><strong>DOTA 2 Proffesional Legue </strong></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6">05.12.2016, 12:40 LGD Gaming vs Cyber</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+8</span></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6">05.12.2016, 12:40 Esport vs Cyber</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+8</span></div>
+                    </div>
+                    <div class="row">                
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><strong>DOTA 2 Proffesional Legue </strong></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6">05.12.2016, 12:40 LGD Gaming vs Cyber</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+8</span></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6">05.12.2016, 12:40 Esport vs Cyber</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+8</span></div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="counter-strike">
+                	<div class="row">                
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><strong>Cyber Gamer Pro Legue </strong></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6">05.12.2016, 17:10 Esport vs Invictus Gaming Vitality</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Match Odds</span><span>1.78</span><span>2.01</span><span>+11</span></div>
+                    </div>
+                    <div class="row">                
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><strong>Cyber Gamer Pro Legue </strong></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6">05.12.2016, 12:40 Esport vs Cyber</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.66</span><span>2.18</span><span>+8</span></div>	                    
+                    </div>
+                    <div class="row">                
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><strong>Cyber Gamer Pro Legue </strong></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6">05.12.2016, 12:40 Esport vs Cyber</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Match Odds</span><span>1.78</span><span>2.01</span><span>+11</span></div>
+                    </div>
+                    <div class="row">                
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><strong>Cyber Gamer Pro Legue </strong></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6">05.12.2016, 12:40 Esport vs Cyber</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Match Odds</span><span>1.78</span><span>2.01</span><span>+11</span></div>
+                    </div>
+                    <div class="row">                
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><strong>Cyber Gamer Pro Legue </strong></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6">05.12.2016, 12:40 Esport vs Cyber</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Match Odds</span><span>1.78</span><span>2.01</span><span>+11</span></div>
+                    </div>
+                  
+                </div>
+                <div role="tabpanel" class="tab-pane" id="hon">
+                	<div class="row">                
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><strong>HON 2 Proffesional Legue </strong></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6">05.12.2016, 12:40 LGD Gaming vs Cyber</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+8</span></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6">05.12.2016, 12:40 Esport vs Cyber</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+8</span></div>
+                    </div>
+                    <div class="row">                
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><strong>HON 2 Proffesional Legue </strong></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6">05.12.2016, 12:40 LGD Gaming vs Cyber</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+8</span></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6">05.12.2016, 12:40 Esport vs Cyber</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+8</span></div>
+                    </div>
+                    <div class="row">                 
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><strong>HON 2 Proffesional Legue </strong></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6">05.12.2016, 12:40 LGD Gaming vs Cyber</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+8</span></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6">05.12.2016, 12:40 Esport vs Cyber</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+8</span></div>
+                    </div>
+                    <div class="row">                
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><strong>HON 2 Proffesional Legue </strong></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6">05.12.2016, 12:40 LGD Gaming vs Cyber</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+8</span></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6">05.12.2016, 12:40 Esport vs Cyber</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+8</span></div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="star-craft">
+                	<div class="row">                
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><strong>Cyber Gamer Pro Legue </strong></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6">05.12.2016, 17:10 Esport vs Invictus Gaming Vitality</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Match Odds</span><span>1.78</span><span>2.01</span><span>+11</span></div>
+                    </div>
+                    <div class="row">                
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><strong>Cyber Gamer Pro Legue </strong></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6">05.12.2016, 12:40 Esport vs Cyber</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.66</span><span>2.18</span><span>+8</span></div>	                    
+                    </div>
+                    <div class="row">                
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><strong>Cyber Gamer Pro Legue </strong></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6">05.12.2016, 12:40 Esport vs Cyber</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Match Odds</span><span>1.78</span><span>2.01</span><span>+11</span></div>
+                    </div>
+                    <div class="row">                
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><strong>Cyber Gamer Pro Legue </strong></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6">05.12.2016, 12:40 Esport vs Cyber</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Match Odds</span><span>1.78</span><span>2.01</span><span>+11</span></div>
+                    </div>
+                    <div class="row">                
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><strong>Cyber Gamer Pro Legue </strong></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6">05.12.2016, 12:40 Esport vs Cyber</div>
+	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Match Odds</span><span>1.78</span><span>2.01</span><span>+11</span></div>
+                    </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <!-- right sidebar -->
         <div class="col-md-2 right-sidebar">
-          <div class="date"></div>
+          <div id="date">
+          </div>
+          <div class="row">
+            <img src="img/live_casino.jpg" />
+          </div>
           <div class="search">
-            <input type="text" id="right-sidebar-search" placeholder="&#61447; search events">
+            <input type="text" id="right-sidebar-search" placeholder="&#61447; search for events">
           </div>
           <div class="row">
-            <span class="span-left"><i class="fa fa-gamepad" aria-hidden="true"></i> ESPORTS</span> <span class="span-right"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#upcomming-events"><span class="play"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span> UPCOMMING EVENTS</span> <span><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+            </button>
+            <ul id="upcomming-events" class="right-sidebar-nav collapse">
+              <li> <a href=""><i class="fa fa-hand-o-right" aria-hidden="true"></i> event 1</a></li>
+              <li> <a href=""><i class="fa fa-hand-o-right" aria-hidden="true"></i> event 2</a></li>
+              <li> <a href=""><i class="fa fa-hand-o-right" aria-hidden="true"></i> event 3</a></li>
+            </ul>
           </div>
-          <!-- onclick expand here-->
           <div class="row">
-            <span class="span-left"><i class="fa fa-gamepad" aria-hidden="true"></i> BASKETBALL</span> <span class="span-right"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#eurosport-right"><span class="play"><i class="fa fa-clock-o" aria-hidden="true"></i> In Play</span> <span><i class="fa fa-gamepad" aria-hidden="true"></i> ESPORTS</span> <span><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+            </button>
+            <ul id="eurosport-right" class="right-sidebar-nav collapse">
+              <li> <a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> esport</a></li>
+              <li> <a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> esport</a></li>
+              <li> <a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> esport</a></li>
+              <li> <a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> esport</a></li>
+              <li> <a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> esport</a></li>
+              <li> <a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> esport</a></li>
+              <li> <a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> esport</a></li>
+              <li> <a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> espots</a></li>
+              <li> <a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> espots</a></li>
+              <li> <a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> espots</a></li>
+              <li> <a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> espots</a></li>
+              <li> <a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> espots</a></li>
+              <li> <a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> espots</a></li>
+            </ul>
           </div>
-          <!-- onclick expand here-->
           <div class="row">
-            <div class="col-md-8">some text some</div>
-            <div class="col-md-4"> <span>  2 </span><span> <i class="fa fa-star"></i></span>
-            </div>
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#bascketball-right"><span class="play"><i class="fa fa-clock-o" aria-hidden="true"></i> In Play</span><span> BASKETBALL</span> <span><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+            </button>
+            <ul id="bascketball-right" class="right-sidebar-nav collapse">
+              <li> <a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> esport</a></li>
+              <li> <a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> esport</a></li>
+              <li> <a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> esport</a></li>
+              <li> <a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> esport</a></li>
+              <li> <a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> esport</a></li>
+              <li> <a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> esport</a></li>
+              <li> <a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> esport</a></li>
+              <li> <a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> espots</a></li>
+              <li> <a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> espots</a></li>
+              <li> <a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> espots</a></li>
+              <li> <a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> espots</a></li>
+              <li> <a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> espots</a></li>
+              <li> <a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> espots</a></li>
+            </ul>
+          </div>
+          <div class="row">
+            <img src="img/bascketball.png" />
+          </div>
+          <div class="row">
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#soccer-right"><span class="play"><i class="fa fa-clock-o" aria-hidden="true"></i> In Play</span> <span><i class="fa fa-gamepad" aria-hidden="true"></i> Soccer</span> <span><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+            </button>
+            <ul id="soccer-right" class="right-sidebar-nav collapse">
+              <li> <a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> esport</a></li>
+              <li> <a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> esport</a></li>
+              <li> <a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> esport</a></li>
+              <li> <a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> esport</a></li>
+              <li> <a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> esport</a></li>
+              <li> <a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> esport</a></li>
+              <li> <a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> esport</a></li>
+              <li> <a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> espots</a></li>
+              <li> <a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> espots</a></li>
+              <li> <a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> espots</a></li>
+              <li> <a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> espots</a></li>
+              <li> <a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> espots</a></li>
+              <li> <a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> espots</a></li>
+            </ul>
           </div>
         </div>
       </div>
-      <footer class="col-md-12">
-        <div class="col-md-12">
-          <div class="col-md-3">
-            <p>sfksopgiopgivklzxdkgopi</p>
-            <p>sfksopgiopgivklzxdkgopi</p>
-          </div>
-          <div class="col-md-3">
-            <p>sfksopgiopgivklzxdkgopi</p>
-            <p>sfksopgiopgivklzxdkgopi</p>
-            <p>sfksopgiopgivklzxdkgopi</p>
-            <p>sfksopgiopgivklzxdkgopi</p>
-          </div>
-          <div class="col-md-3">
-            <p>sfksopgiopgivklzxdkgopi</p>
-            <p>sfksopgiopgivklzxdkgopi</p>
-            <p>sfksopgiopgivklzxdkgopi</p>
-            <p>sfksopgiopgivklzxdkgopi</p>
-          </div>
-          <div class="col-md-3">
-            <p>sfksopgiopgivklzxdkgopi</p>
-            <p>sfksopgiopgivklzxdkgopi</p>
-          </div>
-          <div class="col-md-12">
-            <span>&copy; Copyright 2016 | Tsvetina Georgieva</span>
-          </div>
+    </div>
+    <!-- footer -->
+    <footer class="col-md-12">
+      <div class="col-md-12">
+        <div class="col-md-3">
+          <p>sfksopgiopgivklzxdkgopi</p>
+          <p>sfksopgiopgivklzxdkgopi</p>
         </div>
-      </footer>
+        <div class="col-md-3">
+          <p>sfksopgiopgivklzxdkgopi</p>
+          <p>sfksopgiopgivklzxdkgopi</p>
+          <p>sfksopgiopgivklzxdkgopi</p>
+          <p>sfksopgiopgivklzxdkgopi</p>
+        </div>
+        <div class="col-md-3">
+          <p>sfksopgiopgivklzxdkgopi</p>
+          <p>sfksopgiopgivklzxdkgopi</p>
+          <p>sfksopgiopgivklzxdkgopi</p>
+          <p>sfksopgiopgivklzxdkgopi</p>
+        </div>
+        <div class="col-md-3">
+          <p>sfksopgiopgivklzxdkgopi</p>
+          <p>sfksopgiopgivklzxdkgopi</p>
+        </div>
+      </div>
+    </footer>
+    <div class="col-md-12 copyright">
+      <span>&copy; Copyright 2016 | Tsvetina Georgieva</span>
+    </div>
     </div>
   </body>
 
