@@ -559,10 +559,12 @@ footer {
       margin-top: 10px ;
  }
  .nav-tabs>li>a,
- .middle-section .row .btn,
+ .middle-section .row .btn{
+  font-size: 18px;
+ }
  .right-sidebar .btn,
  .left-sidebar .btn{
-  font-size: 18px;
+  font-size: 20px;
  }
 }
 @media (max-width: 380px ){
@@ -570,6 +572,6 @@ footer {
   display: block;
  }
   .left-sidebar{
-    margin-top: 70px;
+    margin-top: 90px;
  }
 }
