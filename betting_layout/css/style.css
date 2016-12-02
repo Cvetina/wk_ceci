@@ -427,9 +427,7 @@ footer .col-md-3 p:last-child a{
 footer {
 	background-color: #0f2e4d;
 	margin-top: 20px;
-	margin-left: 15px; 
-    margin-right: 15px;
-    padding-top: 15px;
+  padding-top: 15px;
 }
 .copyright{
 	margin-left: 15px; 
@@ -463,12 +461,10 @@ footer {
   margin-left: 0px;
  }
  .col-md-8{
+  margin-top: 20px;
  	padding-left: 1px;
  	padding-right: 1px;
  }
- .col-xs-12 {
-    width: 97%;
-}
 .jackpot, .jackpot ul{
 	text-align: center;
 	padding-bottom: 10px;
@@ -479,20 +475,13 @@ footer {
  	font-size: 28px;
  }
 }
-@media (max-width: 550px ){
- .today-jackpot, .blink-me {
- 	font-size: 18px;
+@media (max-width: 955px) {
+ footer .col-xs-12 .col-xs-3, 
+ footer .col-md-12 .col-md-3{
+      width: 50% ;
+      margin-top: 20px ;
  }
 }
-@media (max-width: 380px ){
- .today-jackpot, .blink-me {
- 	display: block;
- }
-  .left-sidebar{
-    margin-top: 70px;
- }
-}
-
 @media (max-width: 870px) {
     .navbar-header {
         float: none;
@@ -558,5 +547,29 @@ footer {
  .middle-section .row {
  	margin-right: 1px;
  	margin-left: 1px;
+ }
+}
+@media (max-width: 550px ){
+ .today-jackpot, .blink-me {
+  font-size: 18px;
+ }
+ footer .col-xs-12 .col-xs-3, 
+ footer .col-md-12 .col-md-3{
+      width: 100% ;
+      margin-top: 10px ;
+ }
+ .nav-tabs>li>a,
+ .middle-section .row .btn,
+ .right-sidebar .btn,
+ .left-sidebar .btn{
+  font-size: 18px;
+ }
+}
+@media (max-width: 380px ){
+ .today-jackpot, .blink-me {
+  display: block;
+ }
+  .left-sidebar{
+    margin-top: 70px;
  }
 }
