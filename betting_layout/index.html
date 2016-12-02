@@ -11,8 +11,8 @@
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/functions.js"></script>
-  <script type="text/javascript">
+  <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+ <!-- <script type="text/javascript">
     
     document.addEventListener("touchstart", function(){}, true);
      $(document).on('click', '.navbar-collapse.in', function (e) {
@@ -20,7 +20,56 @@
         $(this).collapse('hide');
       }
     });
-  </script>
+  </script> -->
+  <script type="text/javascript">
+            $(document).ready(function() {
+      // get items to poplute from db_items.json
+      $.getJSON("db_items.json", function(json) {
+        var items = json.items;
+        var tabpannel_container = document.getElementById("24HoursEvents");
+
+        // iterates all items in array and generates HTML code for each one, from template
+        for(var i = 0; i < items.length; i++) {               
+         
+         // template which we use for generation of each element
+          var row_string = '<div class="col-md-12 tabs-first">{{title}}' +
+                     ' <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>' +
+                      '<div id="demo" "class="collapse">' +
+                        '<div class="col-md-6 col-sm-6 col-xs-6"><strong>{{legue}}</strong></div>' +
+	                    '<div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>' +
+	                    '<div class="col-md-6 col-sm-6 col-xs-6">{{match}}</div>' +
+	                    '<div class="col-md-6 col-sm-6 col-xs-6"><span>{{winner}}</span><span>{{one}}</span><span>{{two}}</span><span>{{score}}</span></div>' +     
+                      '</div>' +
+                    '</div>';
+
+            // replace each var in template, which is in {{}}
+            row_string = row_string.replace("{{title}}",items[i].title);
+            row_string = row_string.replace("{{legue}}",items[i].legue);
+            row_string = row_string.replace("{{match}}",items[i].match);
+            row_string = row_string.replace("{{winner}}",items[i].winner);
+            row_string = row_string.replace("{{one}}",items[i].one);
+            row_string = row_string.replace("{{two}}",items[i].two);
+            row_string = row_string.replace("{{score}}",items[i].score);
+
+            // create div class 'row', and fill it with generated string row_string
+            var div_current = document.createElement("div"); 
+            div_current.className = "row";
+            tabpannel_container.appendChild(div_current);
+            div_current.innerHTML = row_string;
+         }
+       })
+      
+      .fail(function() {
+        var tabpannel_container = document.getElementById("24HoursEvents");
+        var h2 = document.createElement("h2"); 
+        h2.innerHTML = 'Моля, отворете страницата през webserver, за да видите продуктите!<br>Те се зареждат от JSON файл, който не може да се отвори през <b>file://</b> link!';
+        h2.style.backgroundColor = "red";
+        h2.style.color = "white";
+        tabpannel_container.appendChild(h2);
+  		});
+     });
+
+    </script>        
   <body>
     <div class="main-wrapper">
       <div class="col-md-12 my-nav-wrapper">
@@ -107,429 +156,12 @@
               <!-- Tab pane 24 hours -->
               <div class="tab-content">
                 <div role="tabpanel" class="tab-pane active" id="24HoursEvents">
-                  <div class="row">
-                    <div class="col-md-12 tabs-first">Professional Football League Europe 2016 - Match Super Cup Еurope
-                      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
-                      <div id="demo" class="collapse">
-                        <div class="col-md-6 col-sm-6 col-xs-6"><strong>Football Proffesional Legue </strong></div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
-	                    
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>2.59</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+7</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>1.16</span><span>+7</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+7</span></div>
-                      </div>
-                    </div>
                   
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12 tabs-first">World Professional Football League 2016 - Match World Super Cup
-                      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
-                      <div id="demo1" class="collapse">
-                        <div class="col-md-6 col-sm-6 col-xs-6"><strong>Football Proffesional Legue </strong></div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
-	                    
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>2.59</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+7</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>1.16</span><span>+7</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+7</span></div>
-                      </div>
-                    </div>
-                  
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12 tabs-first">Professional Football League Europe 2016 - Match Super Cup Еurope
-                      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
-                      <div id="demo2" class="collapse">
-                        <div class="col-md-6 col-sm-6 col-xs-6"><strong>Football Proffesional Legue </strong></div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
-	                    
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>2.59</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+7</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>1.16</span><span>+7</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+7</span></div>
-                      </div>
-                    </div>
-                  
-                  </div>
-                   <div class="row">
-                    <div class="col-md-12 tabs-first">World Professional Football League 2016 - Match World Super Cup
-                      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo3"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
-                      <div id="demo3" class="collapse">
-                        <div class="col-md-6 col-sm-6 col-xs-6"><strong>Football Proffesional Legue </strong></div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
-	                    
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>2.59</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+7</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>1.16</span><span>+7</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+7</span></div>
-                      </div>
-                    </div>
-                  
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12 tabs-first">Professional Football League Europe 2016 - Match Super Cup Еurope
-                      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo4"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
-                      <div id="demo4" class="collapse">
-                        <div class="col-md-6 col-sm-6 col-xs-6"><strong>Football Proffesional Legue </strong></div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
-	                    
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>2.59</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+7</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>1.16</span><span>+7</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+7</span></div>
-                      </div>
-                    </div>
-                  
-                  </div>
-                   <div class="row">
-                    <div class="col-md-12 tabs-first">World Professional Football League 2016 - Match World Super Cup
-                      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo5"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
-                      <div id="demo5" class="collapse">
-                        <div class="col-md-6 col-sm-6 col-xs-6"><strong>Football Proffesional Legue </strong></div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
-	                    
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>2.59</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+7</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>1.16</span><span>+7</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+7</span></div>
-                      </div>
-                    </div>
-                  
-                  </div>
                 </div>
                 <!-- Tab pane All Events -->
                 <div role="tabpanel" class="tab-pane" id="allEvents">
-                   <div class="row">
-                    <div class="col-md-12 tabs-first">World Professional Football League 2016 - Match World Super Cup
-                      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2-1"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
-                      <div id="demo2-1" class="collapse">
-                        <div class="col-md-6 col-sm-6 col-xs-6"><strong>Football Proffesional Legue </strong></div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
-	                    
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>2.59</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+7</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>1.16</span><span>+7</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+7</span></div>
-                      </div>
-                    </div>
                   
-                  </div>
-                   <div class="row">
-                    <div class="col-md-12 tabs-first">World Professional Football League 2016 - Match World Super Cup
-                      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2-2"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
-                      <div id="demo2-2" class="collapse">
-                        <div class="col-md-6 col-sm-6 col-xs-6"><strong>Football Proffesional Legue </strong></div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
-	                    
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>2.59</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+7</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>1.16</span><span>+7</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+7</span></div>
-                      </div>
-                    </div>
-                  
-                  </div>
-                   <div class="row">
-                    <div class="col-md-12 tabs-first">World Professional Football League 2016 - Match World Super Cup
-                      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2-3"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
-                      <div id="demo2-3" class="collapse">
-                        <div class="col-md-6 col-sm-6 col-xs-6"><strong>Football Proffesional Legue </strong></div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
-	                    
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>2.59</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+7</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>1.16</span><span>+7</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+7</span></div>
-                      </div>
-                    </div>
-                  
-                  </div>
-                   <div class="row">
-                    <div class="col-md-12 tabs-first">World Professional Football League 2016 - Match World Super Cup
-                      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2-4"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
-                      <div id="demo2-4" class="collapse">
-                        <div class="col-md-6 col-sm-6 col-xs-6"><strong>Football Proffesional Legue </strong></div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
-	                    
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>2.59</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+7</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>1.16</span><span>+7</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+7</span></div>
-                      </div>
-                    </div>
-                  
-                  </div>
-                   <div class="row">
-                    <div class="col-md-12 tabs-first">World Professional Football League 2016 - Match World Super Cup
-                      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2-5"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
-                      <div id="demo2-5" class="collapse">
-                        <div class="col-md-6 col-sm-6 col-xs-6"><strong>Football Proffesional Legue </strong></div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
-	                    
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>2.59</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+7</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>1.16</span><span>+7</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+7</span></div>
-                      </div>
-                    </div>
-                  
-                  </div>
-                   <div class="row">
-                    <div class="col-md-12 tabs-first">World Professional Football League 2016 - Match World Super Cup
-                      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2-6"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
-                      <div id="demo2-6" class="collapse">
-                        <div class="col-md-6 col-sm-6 col-xs-6"><strong>Football Proffesional Legue </strong></div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
-	                    
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>2.59</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+7</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>1.16</span><span>+7</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+7</span></div>
-                      </div>
-                    </div>
-                  
-                  </div>
-                   <div class="row">
-                    <div class="col-md-12 tabs-first">World Professional Football League 2016 - Match World Super Cup
-                      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2-7"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
-                      <div id="demo2-7" class="collapse">
-                        <div class="col-md-6 col-sm-6 col-xs-6"><strong>Football Proffesional Legue </strong></div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
-	                    
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>2.59</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+7</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>1.16</span><span>+7</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+7</span></div>
-                      </div>
-                    </div>
-                  
-                  </div>
-                   <div class="row">
-                    <div class="col-md-12 tabs-first">World Professional Football League 2016 - Match World Super Cup
-                      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2-8"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
-                      <div id="demo2-8" class="collapse">
-                        <div class="col-md-6 col-sm-6 col-xs-6"><strong>Football Proffesional Legue </strong></div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
-	                    
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>2.59</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+7</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>1.16</span><span>+7</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+7</span></div>
-                      </div>
-                    </div>
-                  
-                  </div>
-                   <div class="row">
-                    <div class="col-md-12 tabs-first">World Professional Football League 2016 - Match World Super Cup
-                      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2-9"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
-                      <div id="demo2-9" class="collapse">
-                        <div class="col-md-6 col-sm-6 col-xs-6"><strong>Football Proffesional Legue </strong></div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
-	                    
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>2.59</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+11</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>2.65</span><span>1.16</span><span>+7</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">16.12, 6:40 Liverpool vs Manchester</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>1.16</span><span>+7</span></div>
-
-	                    <div class="col-md-6 col-sm-6 col-xs-6">11.12.2016, 6:40 Chelsea vs Fulham</div>
-	                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+7</span></div>
-                      </div>
-                    </div>
-                  
-                  </div>
+                    
 
                 </div>
               </div>
