@@ -142,14 +142,17 @@ ul li{
 /*end bounce effect*/
 
 /* style main content */
-
+.middle-section > .row{
+  border-radius: 10px;
+}
 .middle-section .row .btn {
-    padding: 2px 5px 2px 5px;
-    background-color: #345a25;
+  padding: 2px 5px 2px 5px;
+  background-color: #345a25;
 	border: none;
 	font-size: 12px;
 	position: absolute;
-    right: 10px;
+  right: 10px;
+  z-index: 5;
 }
 .middle-section .row .btn:focus{
 	outline: none;
@@ -196,7 +199,7 @@ background: linear-gradient(to bottom, rgba(164,179,87,1) 0%, rgba(117,137,12,1)
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4b357', endColorstr='#75890c', GradientType=0 );
 }
 .middle-section .my-tabs-up .row{
-    color: #ECDD3C;
+    color: #fff;
 }
 .middle-section .my-tabs .row:hover,
 .middle-section .my-tabs:hover{
@@ -260,6 +263,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4b357', end
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .3);
    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .3);
 }
+.my-tabs-up .nav-tabs{
+  background-color:  rgba(164,179,87,1);
+}
 .nav-tabs {
     border-bottom: 1px solid rgba(13,41,69, 0.5);
     padding: 5px;
@@ -276,8 +282,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4b357', end
 .nav-tabs>li>a:hover {
     color: #fff;
     cursor: default;
-    background-color:rgba(255,255,255,0.1);
-    border: 1px solid rgba(255,255,255,0.3);;
+    background-color: #0f2e4d;
+    border: 1px solid rgba(255,255,255,0.3);
     border-bottom-color: transparent;
     box-shadow: none;
     -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .3);
@@ -319,8 +325,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4b357', end
 	outline: none;
 }
 .left-sidebar, .right-sidebar{
-	
+	border-radius: 10px;
+  padding-bottom: 10px;
 	background-color: #0f2e4d;
+  border-bottom: 4px solid rgba(105,117,36, 0.8);
+  border-top: 4px solid rgba(105,117,36, 0.8);
 }
 .left-sidebar-nav li, .right-sidebar-nav li{
 	border-bottom: 1px solid rgba(255,255,255,0.2);
@@ -430,6 +439,9 @@ footer {
 	background-color: #0f2e4d;
 	margin-top: 20px;
   padding-top: 15px;
+  border-radius: 10px;
+  border-bottom: 4px solid rgba(105,117,36, 0.8);
+  border-top: 4px solid rgba(105,117,36, 0.8);
 }
 .copyright{
 	margin-left: 15px; 
