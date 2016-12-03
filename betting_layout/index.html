@@ -55,6 +55,9 @@
       <div class="col-md-12 my-body-wrapper">
         <!-- Left side bar -->
         <div class="col-md-2 left-sidebar">
+          <div class="search">
+            <input type="text" id="right-sidebar-search" placeholder="&#61447; search for events">
+          </div>
           <div class="jackpot">
             <h2>Jackpot</h2>
             <ul>
@@ -98,9 +101,11 @@
               <!-- Tab pane 24 hours -->
               <div class="tab-content">
                 <div role="tabpanel" class="tab-pane active" id="24HoursEvents">
+                 <!-- load from db_items.json  -->
                 </div>
                 <!-- Tab pane All Events -->
                 <div role="tabpanel" class="tab-pane" id="allEvents">
+                 <!-- load from db_items2.json  -->
                 </div>
               </div>
             </div>
@@ -123,105 +128,16 @@
               <!-- Tab panes -->
               <div class="tab-content">
                 <div role="tabpanel" class="tab-pane active" id="dota">
-                  
+                   <!-- load from db_items_dota.json  -->
                 </div>
                 <div role="tabpanel" class="tab-pane" id="counter-strike">
-                  <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-6"><strong>Cyber Gamer Pro Legue </strong></div>
-                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
-                    <div class="col-md-6 col-sm-6 col-xs-6">05.12.2016, 17:10 Esport vs Invictus Gaming Vitality</div>
-                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Match Odds</span><span>1.78</span><span>2.01</span><span>+11</span></div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-6"><strong>Cyber Gamer Pro Legue </strong></div>
-                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
-                    <div class="col-md-6 col-sm-6 col-xs-6">05.12.2016, 12:40 Esport vs Cyber</div>
-                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.66</span><span>2.18</span><span>+8</span></div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-6"><strong>Cyber Gamer Pro Legue </strong></div>
-                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
-                    <div class="col-md-6 col-sm-6 col-xs-6">05.12.2016, 12:40 Esport vs Cyber</div>
-                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Match Odds</span><span>1.78</span><span>2.01</span><span>+11</span></div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-6"><strong>Cyber Gamer Pro Legue </strong></div>
-                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
-                    <div class="col-md-6 col-sm-6 col-xs-6">05.12.2016, 12:40 Esport vs Cyber</div>
-                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Match Odds</span><span>1.78</span><span>2.01</span><span>+11</span></div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-6"><strong>Cyber Gamer Pro Legue </strong></div>
-                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
-                    <div class="col-md-6 col-sm-6 col-xs-6">05.12.2016, 12:40 Esport vs Cyber</div>
-                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Match Odds</span><span>1.78</span><span>2.01</span><span>+11</span></div>
-                  </div>
+                  <!-- load from db_items_counter-strike.json  -->
                 </div>
                 <div role="tabpanel" class="tab-pane" id="hon">
-                  <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-6"><strong>HON 2 Proffesional Legue </strong></div>
-                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
-                    <div class="col-md-6 col-sm-6 col-xs-6">05.12.2016, 12:40 LGD Gaming vs Cyber</div>
-                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+8</span></div>
-                    <div class="col-md-6 col-sm-6 col-xs-6">05.12.2016, 12:40 Esport vs Cyber</div>
-                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+8</span></div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-6"><strong>HON 2 Proffesional Legue </strong></div>
-                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
-                    <div class="col-md-6 col-sm-6 col-xs-6">05.12.2016, 12:40 LGD Gaming vs Cyber</div>
-                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+8</span></div>
-                    <div class="col-md-6 col-sm-6 col-xs-6">05.12.2016, 12:40 Esport vs Cyber</div>
-                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+8</span></div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-6"><strong>HON 2 Proffesional Legue </strong></div>
-                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
-                    <div class="col-md-6 col-sm-6 col-xs-6">05.12.2016, 12:40 LGD Gaming vs Cyber</div>
-                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+8</span></div>
-                    <div class="col-md-6 col-sm-6 col-xs-6">05.12.2016, 12:40 Esport vs Cyber</div>
-                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+8</span></div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-6"><strong>HON 2 Proffesional Legue </strong></div>
-                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
-                    <div class="col-md-6 col-sm-6 col-xs-6">05.12.2016, 12:40 LGD Gaming vs Cyber</div>
-                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+8</span></div>
-                    <div class="col-md-6 col-sm-6 col-xs-6">05.12.2016, 12:40 Esport vs Cyber</div>
-                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.49</span><span>2.59</span><span>+8</span></div>
-                  </div>
+                   <!-- load from db_items_hon.json -->
                 </div>
                 <div role="tabpanel" class="tab-pane" id="star-craft">
-                  <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-6"><strong>Cyber Gamer Pro Legue </strong></div>
-                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
-                    <div class="col-md-6 col-sm-6 col-xs-6">05.12.2016, 17:10 Esport vs Invictus Gaming Vitality</div>
-                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Match Odds</span><span>1.78</span><span>2.01</span><span>+11</span></div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-6"><strong>Cyber Gamer Pro Legue </strong></div>
-                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
-                    <div class="col-md-6 col-sm-6 col-xs-6">05.12.2016, 12:40 Esport vs Cyber</div>
-                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Winner Map 1</span><span>1.66</span><span>2.18</span><span>+8</span></div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-6"><strong>Cyber Gamer Pro Legue </strong></div>
-                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
-                    <div class="col-md-6 col-sm-6 col-xs-6">05.12.2016, 12:40 Esport vs Cyber</div>
-                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Match Odds</span><span>1.78</span><span>2.01</span><span>+11</span></div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-6"><strong>Cyber Gamer Pro Legue </strong></div>
-                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
-                    <div class="col-md-6 col-sm-6 col-xs-6">05.12.2016, 12:40 Esport vs Cyber</div>
-                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Match Odds</span><span>1.78</span><span>2.01</span><span>+11</span></div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-6"><strong>Cyber Gamer Pro Legue </strong></div>
-                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>
-                    <div class="col-md-6 col-sm-6 col-xs-6">05.12.2016, 12:40 Esport vs Cyber</div>
-                    <div class="col-md-6 col-sm-6 col-xs-6"><span>Match Odds</span><span>1.78</span><span>2.01</span><span>+11</span></div>
-                  </div>
+                     <!-- load from db_items_sc.json  -->
                 </div>
               </div>
             </div>
@@ -230,9 +146,6 @@
         <!-- right sidebar -->
         <div class="col-md-2 right-sidebar">
           <div id="date">
-          </div>
-          <div class="search">
-            <input type="text" id="right-sidebar-search" placeholder="&#61447; search for events">
           </div>
           <div class="row">
             <img src="img/live_casino.jpg" />

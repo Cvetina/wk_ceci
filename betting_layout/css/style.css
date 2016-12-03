@@ -348,7 +348,30 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4b357', end
 .right-sidebar-nav.collapse li a{
 color: 	#cec87e;
 }
+.search input[type="text"] {
+    position: relative;
+    border-radius: 15px;
+    width: 90%;
+    color: #121405; 
+}
+.search input[type=text]:focus{
+  border-radius: 15px;
+  outline: none;
+  background-color: #e5e5e5;
+}
+
+input { font-family: 'FontAwesome'; }
+
+.search:before {
+    font-family: 'FontAwesome';
+    color: #fff;
+    position: relative;
+    left: -5px;
+    content: " \f002 ";
+}
+
 .jackpot h2{
+  text-align: center;
 	color: #ec3305;
 	animation: skew 3s infinite;
     transform: skew(20deg);
@@ -378,32 +401,11 @@ color: 	#cec87e;
 	text-align: center;
 	color: #ff3300;
 }
-.right-sidebar .row, .right-sidebar .search{
+.right-sidebar .row,.search{
   padding-top: 10px;
 }
 .right-sidebar .row span{
   padding: 5px;
-}
-.search input[type="text"] {
-    position: relative;
-    border-radius: 15px;
-    width: 90%;
-    color: #121405; 
-}
-.search input[type=text]:focus{
-	border-radius: 15px;
-	outline: none;
-	background-color: #e5e5e5;
-}
-
-input { font-family: 'FontAwesome'; }
-
-.search:before {
-    font-family: 'FontAwesome';
-    color: #fff;
-    position: relative;
-    left: -5px;
-    content: " \f002 ";
 }
 
 /* end right sidebar */
