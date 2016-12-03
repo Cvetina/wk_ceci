@@ -142,12 +142,24 @@ ul li{
 /*end bounce effect*/
 
 /* style main content */
+.col-md-12.tabs-first{
+  color: #fff968;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.col-md-12.tabs-first > div{
+  color: #fff;
+   padding-top: 0px;
+}
 .middle-section > .row{
   border-radius: 10px;
 }
 .middle-section .row .btn {
   padding: 2px 5px 2px 5px;
-  background-color: #345a25;
+  background-color: #fff968;
+  color: rgba(3,34,87,1);
 	border: none;
 	font-size: 12px;
 	position: absolute;
@@ -161,31 +173,27 @@ ul li{
 	cursor: default;
 	margin-left: 10px;
 	margin-right: 10px;
-	border-bottom: 1px solid rgba(13,41,69, 0.5);
-    background: rgba(105,117,36,1);
-	background: -moz-linear-gradient(left, rgba(105,117,36,1) 0%, rgba(11,51,8,1) 100%);
-	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(105,117,36,1)), color-stop(100%, rgba(11,51,8,1)));
-	background: -webkit-linear-gradient(left, rgba(105,117,36,1) 0%, rgba(11,51,8,1) 100%);
-	background: -o-linear-gradient(left, rgba(105,117,36,1) 0%, rgba(11,51,8,1) 100%);
-	background: -ms-linear-gradient(left, rgba(105,117,36,1) 0%, rgba(11,51,8,1) 100%);
-	background: linear-gradient(to right, rgba(105,117,36,1) 0%, rgba(11,51,8,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#697524', endColorstr='#0b3308', GradientType=1 );
  }
-.col-md-12.tabs-first{
-    padding: 15px;
+.middle-section .my-tabs-up {
+ background: rgba(11,85,102,1);
+background: -moz-linear-gradient(top, rgba(11,85,102,1) 0%, rgba(11,85,102,1) 2%, rgba(3,34,87,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(11,85,102,1)), color-stop(2%, rgba(11,85,102,1)), color-stop(100%, rgba(3,34,87,1)));
+background: -webkit-linear-gradient(top, rgba(11,85,102,1) 0%, rgba(11,85,102,1) 2%, rgba(3,34,87,1) 100%);
+background: -o-linear-gradient(top, rgba(11,85,102,1) 0%, rgba(11,85,102,1) 2%, rgba(3,34,87,1) 100%);
+background: -ms-linear-gradient(top, rgba(11,85,102,1) 0%, rgba(11,85,102,1) 2%, rgba(3,34,87,1) 100%);
+background: linear-gradient(to bottom, rgba(11,85,102,1) 0%, rgba(11,85,102,1) 2%, rgba(3,34,87,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b5566', endColorstr='#032257', GradientType=0 );
 }
 .middle-section .row .col-md-12:hover,
  .tab-content .tab-pane .col-md-6:hover{
-    background: rgba(90,99,31,1);
-	background: -moz-linear-gradient(left, rgba(90,99,31,1) 0%, rgba(7,31,5,1) 100%);
-	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(90,99,31,1)), color-stop(100%, rgba(7,31,5,1)));
-	background: -webkit-linear-gradient(left, rgba(90,99,31,1) 0%, rgba(7,31,5,1) 100%);
-	background: -o-linear-gradient(left, rgba(90,99,31,1) 0%, rgba(7,31,5,1) 100%);
-	background: -ms-linear-gradient(left, rgba(90,99,31,1) 0%, rgba(7,31,5,1) 100%);
-	background: linear-gradient(to right, rgba(90,99,31,1) 0%, rgba(7,31,5,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5a631f', endColorstr='#071f05', GradientType=1 );
-
- 
+  background: rgba(4,65,79,1);
+background: -moz-linear-gradient(top, rgba(4,65,79,1) 0%, rgba(4,65,79,1) 2%, rgba(1,25,64,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(4,65,79,1)), color-stop(2%, rgba(4,65,79,1)), color-stop(100%, rgba(1,25,64,1)));
+background: -webkit-linear-gradient(top, rgba(4,65,79,1) 0%, rgba(4,65,79,1) 2%, rgba(1,25,64,1) 100%);
+background: -o-linear-gradient(top, rgba(4,65,79,1) 0%, rgba(4,65,79,1) 2%, rgba(1,25,64,1) 100%);
+background: -ms-linear-gradient(top, rgba(4,65,79,1) 0%, rgba(4,65,79,1) 2%, rgba(1,25,64,1) 100%);
+background: linear-gradient(to bottom, rgba(4,65,79,1) 0%, rgba(4,65,79,1) 2%, rgba(1,25,64,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#04414f', endColorstr='#011940', GradientType=0 );
 }
 .middle-section .my-tabs,
 .middle-section .my-tabs .row{
@@ -213,9 +221,12 @@ background: linear-gradient(to bottom, rgba(164,179,87,1) 0%, rgba(117,137,12,1)
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4b357', endColorstr='#75890c', GradientType=0 );
 }
 .middle-section .row .col-md-6{
-	padding-top: 15px;
 	text-align: center;
-	border-bottom: 1px solid rgba(255,255,255,0.1);
+  font-weight: normal;
+}
+.uderline{
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  margin-top: 5px;
 }
 .tabs-first .collapse{
   color: #fff;
@@ -230,8 +241,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4b357', end
 #star-craft .row .col-md-6 span,
 #hon .row .col-md-6 span{
 	display: inline-block;
-    width: 25%;
-    text-align: center;
+  width: 25%;
+  text-align: center;
 }
 #dota .row .col-md-6:first-child, 
 #dota .row .col-md-6:nth-child(2),
@@ -251,6 +262,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4b357', end
 }
 .my-tabs{
 	margin-top: 20px;
+}
+.my-tabs .col-md-6, .my-tabs .col-xs-6 {
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 .navbar-brand>img {
     margin-top: -15px;
