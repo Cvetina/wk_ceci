@@ -31,6 +31,10 @@ ul li{
 	padding: 0;
 	margin: 0;
 }
+div, span, ul li{
+  box-sizing: border-box;
+}
+
 .col-md-6, .col-xs-6 {
     position: relative;
     min-height: 1px;
@@ -147,7 +151,7 @@ ul li{
   font-weight: bold;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 3px solid rgba(255,249,104,0.3);
 }
 .col-md-12.tabs-first > div{
   color: #fff;
@@ -186,14 +190,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b5566', end
 }
 .middle-section .row .col-md-12:hover,
  .tab-content .tab-pane .col-md-6:hover{
-  background: rgba(4,65,79,1);
-background: -moz-linear-gradient(top, rgba(4,65,79,1) 0%, rgba(4,65,79,1) 2%, rgba(1,25,64,1) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(4,65,79,1)), color-stop(2%, rgba(4,65,79,1)), color-stop(100%, rgba(1,25,64,1)));
-background: -webkit-linear-gradient(top, rgba(4,65,79,1) 0%, rgba(4,65,79,1) 2%, rgba(1,25,64,1) 100%);
-background: -o-linear-gradient(top, rgba(4,65,79,1) 0%, rgba(4,65,79,1) 2%, rgba(1,25,64,1) 100%);
-background: -ms-linear-gradient(top, rgba(4,65,79,1) 0%, rgba(4,65,79,1) 2%, rgba(1,25,64,1) 100%);
-background: linear-gradient(to bottom, rgba(4,65,79,1) 0%, rgba(4,65,79,1) 2%, rgba(1,25,64,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#04414f', endColorstr='#011940', GradientType=0 );
+background: rgba(27,80,133,1);
+  background: -moz-linear-gradient(left, rgba(27,80,133,1) 0%, rgba(20,61,102,1) 45%, rgba(19,58,97,1) 99%, rgba(19,58,97,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(27,80,133,1)), color-stop(45%, rgba(20,61,102,1)), color-stop(99%, rgba(19,58,97,1)), color-stop(100%, rgba(19,58,97,1)));
+  background: -webkit-linear-gradient(left, rgba(27,80,133,1) 0%, rgba(20,61,102,1) 45%, rgba(19,58,97,1) 99%, rgba(19,58,97,1) 100%);
+  background: -o-linear-gradient(left, rgba(27,80,133,1) 0%, rgba(20,61,102,1) 45%, rgba(19,58,97,1) 99%, rgba(19,58,97,1) 100%);
+  background: -ms-linear-gradient(left, rgba(27,80,133,1) 0%, rgba(20,61,102,1) 45%, rgba(19,58,97,1) 99%, rgba(19,58,97,1) 100%);
+  background: linear-gradient(to right, rgba(27,80,133,1) 0%, rgba(20,61,102,1) 45%, rgba(19,58,97,1) 99%, rgba(19,58,97,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b5085', endColorstr='#133a61', GradientType=1 );
 }
 .middle-section .my-tabs,
 .middle-section .my-tabs .row{
@@ -223,18 +227,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4b357', end
 .middle-section .row .col-md-6{
 	text-align: center;
   font-weight: normal;
-}
-.uderline{
+  box-sizing: border-box;
   border-bottom: 1px solid rgba(255,255,255,0.1);
-  margin-top: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 15px;
 }
 .tabs-first .collapse{
   color: #fff;
 }
 .middle-section .row .col-md-6 span{
-	display: inline-block;
+	  display: inline-block;
     width: 25%;
-    border-left: 1px solid rgba(255,255,255,0.1);
+    -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box; 
 }
 #dota .row .col-md-6 span,
 #counter-strike .row .col-md-6 span,
@@ -252,7 +258,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4b357', end
 #hon .row .col-md-6:nth-child(2),
 #star-craft .row .col-md-6:first-child, 
 #star-craft .row .col-md-6:nth-child(2){
-    background-color: #0f2e4d;
+   background: rgba(27,80,133,1);
+  background: -moz-linear-gradient(left, rgba(27,80,133,1) 0%, rgba(20,61,102,1) 45%, rgba(19,58,97,1) 99%, rgba(19,58,97,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(27,80,133,1)), color-stop(45%, rgba(20,61,102,1)), color-stop(99%, rgba(19,58,97,1)), color-stop(100%, rgba(19,58,97,1)));
+  background: -webkit-linear-gradient(left, rgba(27,80,133,1) 0%, rgba(20,61,102,1) 45%, rgba(19,58,97,1) 99%, rgba(19,58,97,1) 100%);
+  background: -o-linear-gradient(left, rgba(27,80,133,1) 0%, rgba(20,61,102,1) 45%, rgba(19,58,97,1) 99%, rgba(19,58,97,1) 100%);
+  background: -ms-linear-gradient(left, rgba(27,80,133,1) 0%, rgba(20,61,102,1) 45%, rgba(19,58,97,1) 99%, rgba(19,58,97,1) 100%);
+  background: linear-gradient(to right, rgba(27,80,133,1) 0%, rgba(20,61,102,1) 45%, rgba(19,58,97,1) 99%, rgba(19,58,97,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b5085', endColorstr='#133a61', GradientType=1 );
 }
 #dota .row, #counter-strike .row{
 	border: none;
@@ -560,6 +573,19 @@ footer {
   .navbar-brand {
     display: block !important;
     float: none;
+ }
+ .middle-section .row .col-md-6 {
+    padding: 0;
+    width: 100%;
+    text-align: left;
+ }
+  .middle-section .row .col-md-6 span{
+    padding: 0;
+    float: left;
+    text-align: left;
+    color: #B7D032;
+    text-align: center;
+    font-weight: bold;
  }
 }
 @media (max-width: 770px) {
