@@ -10,7 +10,7 @@
         // template which we use for generation of each element
         var row_string = '<div class="col-md-12 tabs-first">{{title}}' +
           ' <button type="button" class="btn btn-info" data-toggle="collapse" data-target="{{target}}"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>' +
-          '<div id="{{demo}}" "class="collapse">' +
+          '<div id="{{demo}}" class="collapse">' +
           '<div class="col-md-6 col-sm-6 col-xs-6"><strong>{{legue}}</strong></div>' +
           '<div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>' +
           '<div class="col-md-6 col-sm-6 col-xs-6">{{match}}</div>' +
@@ -57,7 +57,7 @@
         // template which we use for generation of each element
         var row_string = '<div class="col-md-12 tabs-first">{{title}}' +
           ' <button type="button" class="btn btn-info" data-toggle="collapse" data-target="{{target}}"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>' +
-          '<div id="{{demo}}" "class="collapse">' +
+          '<div id="{{demo}}" class="collapse">' +
           '<div class="col-md-6 col-sm-6 col-xs-6"><strong>{{legue}}</strong></div>' +
           '<div class="col-md-6 col-sm-6 col-xs-6"><span>Market</span><span>1</span><span>2</span><span><i class="fa fa-star"></i></span></div>' +
           '<div class="col-md-6 col-sm-6 col-xs-6">{{match}}</div>' +

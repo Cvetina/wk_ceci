@@ -299,6 +299,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4b357', end
     padding: 5px;
     margin: 0;
     text-align: center;
+    border-radius: 10px;
 }
 .nav-tabs>li{ 
      display: inline-table;
@@ -613,11 +614,6 @@ footer {
  	margin-right: 1px;
  	margin-left: 1px;
  }
-}
-@media (max-width: 550px ){
- .today-jackpot, .blink-me {
-  font-size: 18px;
- }
  footer .col-xs-12 .col-xs-3, 
  footer .col-md-12 .col-md-3{
       width: 100% ;
@@ -627,6 +623,18 @@ footer {
  .middle-section .row .btn,
  .right-sidebar .btn,
  .left-sidebar .btn{
+  font-size: 19px;
+ }
+ .left-sidebar-nav li,
+ .right-sidebar-nav li{
+ font-size: 20px;
+}
+.nav-footer li{
+  font-size: 18px;
+}
+}
+@media (max-width: 550px ){
+ .today-jackpot, .blink-me {
   font-size: 18px;
  }
 }
@@ -637,4 +645,5 @@ footer {
   .left-sidebar{
     margin-top: 90px;
  }
+
 }
