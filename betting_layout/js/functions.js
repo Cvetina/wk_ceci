@@ -41,7 +41,7 @@
     .fail(function() {
       var tabpannel_container = document.getElementById("24HoursEvents");
       var h2 = document.createElement("h2");
-      h2.innerHTML = 'Моля, отворете страницата през webserver, за да видите продуктите!<br>Те се зареждат от JSON файл, който не може да се отвори през <b>file://</b> link!';
+      h2.innerHTML = 'Моля, отворете страницата през webserver, за да видите залозите!<br>Те се зареждат от JSON файл, който не може да се отвори през <b>file://</b> link!';
       h2.style.backgroundColor = "red";
       h2.style.color = "white";
       tabpannel_container.appendChild(h2);
@@ -88,7 +88,7 @@
     .fail(function() {
       var tabpannel_container = document.getElementById("allEvents");
       var h2 = document.createElement("h2");
-      h2.innerHTML = 'Моля, отворете страницата през webserver, за да видите продуктите!<br>Те се зареждат от JSON файл, който не може да се отвори през <b>file://</b> link!';
+      h2.innerHTML = 'Моля, отворете страницата през webserver, за да видите залозите!<br>Те се зареждат от JSON файл, който не може да се отвори през <b>file://</b> link!';
       h2.style.backgroundColor = "red";
       h2.style.color = "white";
       tabpannel_container.appendChild(h2);
@@ -134,7 +134,7 @@
     .fail(function() {
       var tabpannel_container = document.getElementById("dota");
       var h2 = document.createElement("h2");
-      h2.innerHTML = 'Моля, отворете страницата през webserver, за да видите продуктите!<br>Те се зареждат от JSON файл, който не може да се отвори през <b>file://</b> link!';
+      h2.innerHTML = 'Моля, отворете страницата през webserver, за да видите залозите!<br>Те се зареждат от JSON файл, който не може да се отвори през <b>file://</b> link!';
       h2.style.backgroundColor = "red";
       h2.style.color = "white";
       tabpannel_container.appendChild(h2);
@@ -179,7 +179,7 @@
     .fail(function() {
       var tabpannel_container = document.getElementById("counter-strike");
       var h2 = document.createElement("h2");
-      h2.innerHTML = 'Моля, отворете страницата през webserver, за да видите продуктите!<br>Те се зареждат от JSON файл, който не може да се отвори през <b>file://</b> link!';
+      h2.innerHTML = 'Моля, отворете страницата през webserver, за да видите залозите!<br>Те се зареждат от JSON файл, който не може да се отвори през <b>file://</b> link!';
       h2.style.backgroundColor = "red";
       h2.style.color = "white";
       tabpannel_container.appendChild(h2);
@@ -224,7 +224,7 @@
     .fail(function() {
       var tabpannel_container = document.getElementById("hon");
       var h2 = document.createElement("h2");
-      h2.innerHTML = 'Моля, отворете страницата през webserver, за да видите продуктите!<br>Те се зареждат от JSON файл, който не може да се отвори през <b>file://</b> link!';
+      h2.innerHTML = 'Моля, отворете страницата през webserver, за да видите залозите!<br>Те се зареждат от JSON файл, който не може да се отвори през <b>file://</b> link!';
       h2.style.backgroundColor = "red";
       h2.style.color = "white";
       tabpannel_container.appendChild(h2);
@@ -262,7 +262,7 @@
     .fail(function() {
       var tabpannel_container = document.getElementById("star-craft");
       var h2 = document.createElement("h2");
-      h2.innerHTML = 'Моля, отворете страницата през webserver, за да видите продуктите!<br>Те се зареждат от JSON файл, който не може да се отвори през <b>file://</b> link!';
+      h2.innerHTML = 'Моля, отворете страницата през webserver, за да видите залозите!<br>Те се зареждат от JSON файл, който не може да се отвори през <b>file://</b> link!';
       h2.style.backgroundColor = "red";
       h2.style.color = "white";
       tabpannel_container.appendChild(h2);
