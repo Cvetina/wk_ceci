@@ -47,7 +47,7 @@ div, span, ul li{
 	margin: 0 auto;
 }
 .banner-wrapper{
-	background-image: url('../img/banner-bg.png');
+	background-image: url('../img/hon_banner.png');
 	background-repeat: no-repeat;
 	background-position: right;
 	height: 100px;
@@ -525,6 +525,10 @@ footer {
  .today-jackpot, .blink-me {
  	font-size: 28px;
  }
+ body{
+  background: url(../img/dota_bg.png) no-repeat 0 -20% rgb(9, 29, 48);
+  background-attachment: fixed;
+}
 }
 @media (max-width: 955px) {
  footer .col-xs-12 .col-xs-3, 
@@ -639,6 +643,9 @@ footer {
 }
 .nav-footer li{
   font-size: 18px;
+}
+.banner-wrapper{
+  background: none;
 }
 }
 @media (max-width: 550px ){
