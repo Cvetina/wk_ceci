@@ -1,5 +1,6 @@
 body{
-	background-color: #091d30;
+	background: url(../img/dota_bg.png) no-repeat 0 99% rgb(9, 29, 48);
+	background-attachment: fixed;
 	color: #eae7c7;
 	font-family: Verdana, Serif;
 }
