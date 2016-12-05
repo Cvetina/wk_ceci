@@ -526,7 +526,7 @@ footer {
  	font-size: 28px;
  }
  body{
-  background: url(../img/dota_bg.png) no-repeat 0 top rgb(9, 29, 48);
+  background: url(../img/dota_bg.png) no-repeat 50% top rgb(9, 29, 48);
   background-attachment: fixed;
 }
 }
@@ -646,6 +646,9 @@ footer {
 }
 .banner-wrapper{
   background: none;
+}
+.navbar-collapse.collapse.in{
+	background-color: rgba(0,0,0,0.4);
 }
 }
 @media (max-width: 550px ){
